@@ -10,4 +10,5 @@ TicketsCloud HTTP API v0
     :maxdepth: 3
 
     basics
+    resources/index
     services/index
