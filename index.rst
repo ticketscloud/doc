@@ -11,6 +11,7 @@ Contents:
 .. toctree::
     :maxdepth: 3
 
+    v0/index
 
 
 Indices and tables
