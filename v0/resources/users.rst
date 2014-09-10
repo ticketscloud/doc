@@ -75,7 +75,7 @@ create related :ref:`partners <partner>` and their :ref:`keys <apikey>`.
     :<json string email: User email address
     :<json string first_name: User first name
     :<json last_name: User last name
-    :<json passwd: New password
+    :<json password: New password
     :>header Content-Type: :mimetype:`application/json`
     :>header Transfer-Encoding: ``chunked``
     :>json datetime created_at: User creation timestamp
@@ -224,7 +224,7 @@ Collection of :ref:`user` objects.
     :<header Content-Type: :mimetype:`application/json`
     :query string fields-schema: :ref:`api/dsl`
     :<json string email: User email
-    :<json string passwd: User password
+    :<json string password: User password
     :>header Content-Type: :mimetype:`application/json`
     :>json datetime created_at: User creation timestamp
     :>json string email: User email address
@@ -248,7 +248,7 @@ Collection of :ref:`user` objects.
 
         {
             "email": "user@domain.tld",
-            "passwd": "s3cr1t"
+            "password": "s3cr1t"
         }
 
 

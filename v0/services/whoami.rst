@@ -11,7 +11,7 @@ Who Am I
     :<header Accept: :mimetype:`application/json`
     :<header Content-Type: :mimetype:`application/json`
     :<json string email: User email
-    :<json string passwd: User password
+    :<json string password: User password
     :>header Content-Type: :mimetype:`application/json`
     :>header Set-Cookie: Authorization token
     :>header Transfer-Encoding: ``chunked``
@@ -39,7 +39,7 @@ Who Am I
 
         {
             "email": "user@domain.tld",
-            "passwd": "s3cr1t"
+            "password": "s3cr1t"
         }
 
 
