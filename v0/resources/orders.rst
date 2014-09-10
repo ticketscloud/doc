@@ -304,8 +304,7 @@ to buy:
 
     {
         "tickets": ["ticket-id1", "ticket-id2"],
-        "event": "event-id",
-        "deal": "deal-id"
+        "event": "event-id"
     }
 
 However, for some events there are no tickets which may have some specific
@@ -323,8 +322,7 @@ just some "random" tickets without explicitly specifying their IDs:
             "amount": 13,
             "set": "set-id",
         }
-        "event": "event-id",
-        "deal": "deal-id"
+        "event": "event-id"
     }
 
 The :ref:`deal` ID is optional and only need when you have to explicitly define
