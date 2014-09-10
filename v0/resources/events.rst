@@ -18,7 +18,7 @@ Event
     :query string fields-schema: :ref:`api/dsl`
     :>header Content-Type: :mimetype:`application/json`
     :>header Transfer-Encoding: ``chunked``
-    :>json datetime created_at: Partner creation timestamp
+    :>json datetime created_at: Event creation timestamp
     :>json string id: :ref:`event` ID
     :>json string lifetime: Event lifetime in iCal format
     :>json string org: :ref:`Organizer <partner>` ID
@@ -27,7 +27,7 @@ Event
     :>json string status: Event status
     :>json array tags: Event tags
     :>json object title: Title and description
-    :>json datetime updated_at: Partner update timestamp
+    :>json datetime updated_at: Event update timestamp
     :>json venue: Event venue
     :code 200: Ok
     :code 400: Invalid request parameters
@@ -95,7 +95,7 @@ Events
     :query string status: Filters events by their status
     :>header Content-Type: :mimetype:`application/json`
     :>header Transfer-Encoding: ``chunked``
-    :>jsonarr datetime created_at: Partner creation timestamp
+    :>jsonarr datetime created_at: Event creation timestamp
     :>jsonarr string id: :ref:`event` ID
     :>jsonarr string lifetime: Event lifetime in iCal format
     :>jsonarr string org: :ref:`Organizer <partner>` ID
@@ -104,7 +104,7 @@ Events
     :>jsonarr string status: Event status
     :>jsonarr array tags: Event tags
     :>jsonarr object title: Title and description
-    :>jsonarr datetime updated_at: Partner update timestamp
+    :>jsonarr datetime updated_at: Event update timestamp
     :>jsonarr venue: Event venue
     :code 200: Ok
     :code 400: Invalid request parameters

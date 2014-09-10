@@ -8,12 +8,13 @@ Venues
 Venue
 =====
 
-.. http:get:: /v0/resources/venues/{idvenue}
+.. http:get:: /v0/resources/events/{idevent}/venues/{idvenue}
     :synopsis: Returns information about the venue
 
     Returns information about the venue.
 
     :<header Accept: :mimetype:`application/json`
+    :param string idevent: :ref:`event` ID
     :param string idvenue: :ref:`venue` ID
     :query string fields-schema: :ref:`api/dsl`
     :>header Content-Type: :mimetype:`application/json`
@@ -34,12 +35,13 @@ Venue
     :code 403: Operation not allowed
 
 
-.. http:patch:: /v0/resources/venues/{idvenue}
+.. http:patch:: /v0/resources/events/{idevent}/venues/{idvenue}
     :synopsis: Updates venue information
 
     Updates venue information.
 
     :<header Accept: :mimetype:`application/json`
+    :param string idevent: :ref:`event` ID
     :param string idvenue: :ref:`venue` ID
     :query string fields-schema: :ref:`api/dsl`
     :<json string address: Venue location address
@@ -67,12 +69,14 @@ Venue
     :code 403: Operation not allowed
 
 
-.. http:delete:: /v0/resources/venues/{idvenue}
+.. http:delete:: /v0/resources/events/{idevent}/venues/{idvenue}
     :synopsis: Deletes a venue
 
     Deletes a venue.
 
     :<header Accept: :mimetype:`application/json`
+    :param string idevent: :ref:`event` ID
+    :param string idvenue: :ref:`venue` ID
     :code 200: Ok
     :code 400: Invalid request parameters
     :code 401: Authentication required
@@ -88,6 +92,7 @@ Venues
     :synopsis: Returns list of existed venues
 
     :<header Accept: :mimetype:`application/json`
+    :param string idevent: :ref:`event` ID
     :param string idvenue: :ref:`venue` ID
     :query string fields-schema: :ref:`api/dsl`
     :query string filter: Custom filter
@@ -118,6 +123,7 @@ Venues
     Creates a new venue.
 
     :<header Accept: :mimetype:`application/json`
+    :param string idevent: :ref:`event` ID
     :param string idvenue: :ref:`venue` ID
     :query string fields-schema: :ref:`api/dsl`
     :<json string address: Venue location address
