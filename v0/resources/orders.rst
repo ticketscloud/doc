@@ -18,14 +18,14 @@ Order
     :query string fields-schema: :ref:`api/dsl`
     :>header Content-Type: :mimetype:`application/json`
     :>header Transfer-Encoding: ``chunked``
-    :>json object buyer: Customer information
+    :>json object customer: Customer information
     :>json datetime created_at: Partner creation timestamp
     :>json string deal: :ref:`deal` ID
     :>json string event: :ref:`event` ID
     :>json string id: :ref:`order` ID
     :>json datetime reserved_till: Related Legal
     :>json object rules: `Rules` mapping
-    :>json string seller: :ref:`Seller <partner>` ID
+    :>json string vendor: :ref:`vendor <partner>` ID
     :>json string status: Order status
     :>json array tickets: List of ordered `tickets` ids
     :>json datetime updated_at: Partner update timestamp
@@ -53,7 +53,7 @@ Order
         Transfer-Encoding: chunked
 
         {
-            "buyer": {},
+            "customer": {},
             "created_at": null,
             "deal": "535fb1f1dca6a9d1638f2008",
             "event": "5357baaff51600525c9e1397",
@@ -62,7 +62,7 @@ Order
             "rules": {
                 "5360a75a2b590f1c88e8680c": "537368ff1b9bf9d05cca835a"
             },
-            "seller": null,
+            "vendor": null,
             "status": "executed",
             "tickets": [
                 "537df47b6ab04735203a7219",
@@ -80,19 +80,19 @@ Order
     :<header Accept: :mimetype:`application/json`
     :param string idorder: :ref:`order` ID
     :query string fields-schema: :ref:`api/dsl`
-    :<json object buyer: Customer information
+    :<json object customer: Customer information
     :<json string status: Order status
     :<json array tickets: List of ordered `tickets` ids
     :>header Content-Type: :mimetype:`application/json`
     :>header Transfer-Encoding: ``chunked``
-    :>json object buyer: Customer information
+    :>json object customer: Customer information
     :>json datetime created_at: Partner creation timestamp
     :>json string deal: :ref:`deal` ID
     :>json string event: :ref:`event` ID
     :>json string id: :ref:`order` ID
     :>json datetime reserved_till: Related Legal
     :>json object rules: `Rules` mapping
-    :>json string seller: :ref:`Seller <partner>` ID
+    :>json string vendor: :ref:`vendor <partner>` ID
     :>json string status: Order status
     :>json array tickets: List of ordered `tickets` ids
     :>json datetime updated_at: Partner update timestamp
@@ -128,7 +128,7 @@ Order
         Transfer-Encoding: chunked
 
         {
-            "buyer": {},
+            "customer": {},
             "created_at": null,
             "deal": "535fb1f1dca6a9d1638f2008",
             "event": "5357baaff51600525c9e1397",
@@ -137,7 +137,7 @@ Order
             "rules": {
                 "5360a75a2b590f1c88e8680c": "537368ff1b9bf9d05cca835a"
             },
-            "seller": null,
+            "vendor": null,
             "status": "executed",
             "tickets": [
                 "537df47b6ab04735203a7219",
@@ -192,14 +192,14 @@ Orders
     :query string fields-schema: :ref:`api/dsl`
     :>header Content-Type: :mimetype:`application/json`
     :>header Transfer-Encoding: ``chunked``
-    :>jsonarr object buyer: Customer information
+    :>jsonarr object customer: Customer information
     :>jsonarr datetime created_at: Partner creation timestamp
     :>jsonarr string deal: :ref:`deal` ID
     :>jsonarr string event: :ref:`event` ID
     :>jsonarr string id: :ref:`order` ID
     :>jsonarr datetime reserved_till: Related Legal
     :>jsonarr object rules: `Rules` mapping
-    :>json string seller: :ref:`Seller <partner>` ID
+    :>json string vendor: :ref:`vendor <partner>` ID
     :>jsonarr string status: Order status
     :>jsonarr array tickets: List of ordered `tickets` ids
     :>jsonarr datetime updated_at: Partner update timestamp
@@ -230,7 +230,7 @@ Orders
 
         [
             {
-                "buyer": {},
+                "customer": {},
                 "created_at": "2014-07-16T21:00:00+00:00",
                 "deal": "535fb1f1dca6a9d1638f2008",
                 "event": "5357baaff51600525c9e1397",
@@ -239,7 +239,7 @@ Orders
                 "rules": {
                     "5360a75a2b590f1c88e8680c": "537368ff1b9bf9d05cca835a"
                 },
-                "seller": null,
+                "vendor": null,
                 "status": "executed",
                 "tickets": [
                     "53b9421428422ec1b9cafbb5",
@@ -249,7 +249,7 @@ Orders
                 "value": null
             },
             {
-                "buyer": {
+                "customer": {
                     "email": null,
                     "first_name": null,
                     "last_name": null,
@@ -263,7 +263,7 @@ Orders
                 "rules": {
                     "5360a75a2b590f1c88e8680c": "537368ff1b9bf9d05cca835a"
                 },
-                "seller": null,
+                "vendor": null,
                 "status": "done",
                 "tickets": [
                     "5360a7fc2b590f1c88e8680e"
@@ -435,7 +435,7 @@ Update Customer Information
     Content-Type: application/json
 
     {
-        "buyer": {
+        "customer": {
             "first_name": "John",
             "last_name": "Smith",
             "email": "user@mail.us",
