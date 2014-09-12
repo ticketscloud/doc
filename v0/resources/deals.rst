@@ -17,6 +17,8 @@ Deal
 
     :<header Accept: :mimetype:`application/json`
     :param string idevent: :ref:`event` ID
+    :query string partner: filter for obj or subj
+    :query string status: filter for status
     :query string fields-schema: :ref:`api/dsl`
     :>header Content-Type: :mimetype:`application/json`
     :>header Transfer-Encoding: ``chunked``
