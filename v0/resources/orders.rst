@@ -319,8 +319,7 @@ just some "random" tickets without explicitly specifying their IDs:
 
     {
         "random": {
-            "amount": 13,
-            "set": "set-id",
+            "ticketset-id": 13,
         }
         "event": "event-id"
     }
@@ -355,9 +354,8 @@ ordered tickets:
 
     {
         "random": {
-            "action": "add",
-            "amount": 13,
-            "set": "id"
+            "ticketset-id": 13,
+            "other-ticketset-id": 1,
         }
     }
 
