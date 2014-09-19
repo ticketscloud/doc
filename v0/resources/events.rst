@@ -29,6 +29,7 @@ Event
     :>json object title: Title and description
     :>json datetime updated_at: Event update timestamp
     :>json venue: Event venue
+    :>json age_rating: age rating
     :code 200: Ok
     :code 400: Invalid request parameters
     :code 401: Authentication required
@@ -74,7 +75,8 @@ Event
                 "text": "Семинар: милые котята"
             },
             "updated_at": null,
-            "venue": null
+            "venue": null,
+            "age_rating": 0
         }
 
 
@@ -106,6 +108,7 @@ Events
     :>jsonarr object title: Title and description
     :>jsonarr datetime updated_at: Event update timestamp
     :>jsonarr venue: Event venue
+    :>json age_rating: age rating
     :code 200: Ok
     :code 400: Invalid request parameters
     :code 401: Authentication required
@@ -151,7 +154,8 @@ Events
                     "text": "Семинар: милые котята"
                 },
                 "updated_at": null,
-                "venue": null
+                "venue": null,
+                "age_rating": 0
             },
             {
                 "created_at": null,
@@ -174,7 +178,8 @@ Events
                     "text": "MEGADETH"
                 },
                 "updated_at": null,
-                "venue": null
+                "venue": null,
+                "age_rating": 0
             },
             {
                 "created_at": null,
@@ -197,7 +202,8 @@ Events
                     "text": "ДДТ. Презентация альбома «Прозрачный»"
                 },
                 "updated_at": null,
-                "venue": null
+                "venue": null,
+                "age_rating": 0
             },
             {
                 "created_at": null,
@@ -220,6 +226,7 @@ Events
                     "text": "Смысловые Галлюцинации. 25 лет в темноте"
                 },
                 "updated_at": null,
-                "venue": null
+                "venue": null,
+                "age_rating": 0
             }
         ]
