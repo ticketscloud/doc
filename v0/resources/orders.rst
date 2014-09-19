@@ -83,6 +83,7 @@ Order
     :<json object customer: Customer information
     :<json string status: Order status
     :<json array tickets: List of ordered `tickets` ids
+    :<json bool all_or_nothing: reserve all tickets or not resetve nothing
     :>header Content-Type: :mimetype:`application/json`
     :>header Transfer-Encoding: ``chunked``
     :>json object customer: Customer information
