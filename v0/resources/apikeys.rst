@@ -42,7 +42,7 @@ request that been made to TicketsCloud API.
         GET /v0/resources/partners/535fb19bdca6a9d1638f2007/api_keys/53f1d89437abbd0a9ca87882 HTTP/1.1
         Accept: application/json
         Authorization: key my-very-secret-key
-        Host: ticketscloud.ru
+        Host: ticketscloud.org
 
 
     **Response**:
@@ -98,7 +98,7 @@ request that been made to TicketsCloud API.
         Authorization: key my-very-secret-key
         Content-Length: 21
         Content-Type: application/json; charset=utf-8
-        Host: ticketscloud.ru
+        Host: ticketscloud.org
 
         {
             "name": "new-name"
@@ -146,7 +146,7 @@ request that been made to TicketsCloud API.
         DELETE /v0/resources/partners/535fb19bdca6a9d1638f2007/api_keys/53f1d89437abbd0a9ca87882 HTTP/1.1
         Accept: application/json
         Authorization: key my-very-secret-key
-        Host: ticketscloud.ru
+        Host: ticketscloud.org
 
 
     **Response**:
@@ -197,7 +197,7 @@ Manages :ref:`apikey` collection of specific :ref:`partner`.
         GET /v0/resources/partners/535fb19bdca6a9d1638f2007/api_keys HTTP/1.1
         Accept: application/json
         Authorization: key my-very-secret-key
-        Host: ticketscloud.ru
+        Host: ticketscloud.org
 
 
     **Response**:
@@ -269,7 +269,7 @@ Manages :ref:`apikey` collection of specific :ref:`partner`.
         Authorization: key my-very-secret-key
         Content-Length: 20
         Content-Type: application/json; charset=utf-8
-        Host: ticketscloud.ru
+        Host: ticketscloud.org
 
         {
             "name": "new-key"

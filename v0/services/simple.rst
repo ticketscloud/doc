@@ -13,7 +13,7 @@ Simple service for lazy integration
         GET /v0/services/simple/events HTTP/1.1
         Accept: application/json
         Authorization: key your-very-secret-key
-        Host: ticketscloud.ru
+        Host: ticketscloud.org
 
     **Response**
 
@@ -106,7 +106,7 @@ Return specific event with additional information.
         GET /v0/services/simple/events/5357baaff51600525c9e1397 HTTP/1.1
         Accept: application/json
         Authorization: key your-very-secret-key
-        Host: ticketscloud.ru
+        Host: ticketscloud.org
 
     **Response**
 

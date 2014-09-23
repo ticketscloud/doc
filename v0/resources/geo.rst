@@ -34,7 +34,7 @@ Countries
 
         GET /v0/resources/countries HTTP/1.1
         Accept: application/json
-        Host: ticketscloud.ru
+        Host: ticketscloud.org
 
     **Response**:
 
@@ -216,7 +216,7 @@ Countries
 
         GET /v0/resources/countries?suggest=Rus HTTP/1.1
         Accept: application/json
-        Host: ticketscloud.ru
+        Host: ticketscloud.org
 
     **Response**:
 
@@ -269,7 +269,7 @@ Cities
 
         GET /v0/resources/cities HTTP/1.1
         Accept: application/json
-        Host: ticketscloud.ru
+        Host: ticketscloud.org
 
 
     **Response**:

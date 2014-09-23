@@ -35,7 +35,7 @@ Who Am I
         Accept: application/json
         Content-Length: 49
         Content-Type: application/json; charset=utf-8
-        Host: ticketscloud.ru
+        Host: ticketscloud.org
 
         {
             "email": "user@domain.tld",
@@ -53,8 +53,8 @@ Who Am I
         Content-Type: application/json; charset=UTF-8
         Server: nginx
         Set-Cookie: auth_tkt="FiYmQwNmIyMWNiMjU0!userid_type:b64unicode"; Path=/
-        Set-Cookie: auth_tkt="FiYmQwNmIyMWNiMjU0!userid_type:b64unicode"; Domain=ticketscloud.ru; Path=/
-        Set-Cookie: auth_tkt="FiYmQwNmIyMWNiMjU0!userid_type:b64unicode"; Domain=.ticketscloud.ru; Path=/
+        Set-Cookie: auth_tkt="FiYmQwNmIyMWNiMjU0!userid_type:b64unicode"; Domain=ticketscloud.org; Path=/
+        Set-Cookie: auth_tkt="FiYmQwNmIyMWNiMjU0!userid_type:b64unicode"; Domain=.ticketscloud.org; Path=/
         Transfer-Encoding: chunked
 
         {
@@ -95,8 +95,8 @@ Who Am I
 
         GET /v0/services/whoami HTTP/1.1
         Accept: application/json
-        Cookie: auth_tkt="FiYmQwNmIyMWNiMjU0!userid_type:b64unicode"; Domain=ticketscloud.ru; Path=/
-        Host: ticketscloud.ru
+        Cookie: auth_tkt="FiYmQwNmIyMWNiMjU0!userid_type:b64unicode"; Domain=ticketscloud.org; Path=/
+        Host: ticketscloud.org
 
     **Response**:
 
@@ -139,8 +139,8 @@ Who Am I
 
         DELETE /v0/services/whoami HTTP/1.1
         Accept: application/json
-        Cookie: auth_tkt="FiYmQwNmIyMWNiMjU0!userid_type:b64unicode"; Domain=ticketscloud.ru; Path=/
-        Host: ticketscloud.ru
+        Cookie: auth_tkt="FiYmQwNmIyMWNiMjU0!userid_type:b64unicode"; Domain=ticketscloud.org; Path=/
+        Host: ticketscloud.org
 
     **Response**:
 
@@ -151,7 +151,7 @@ Who Am I
         Content-Encoding: gzip
         Content-Type: application/json; charset=UTF-8
         Server: nginx
-        Set-Cookie: auth_tkt=; Domain=.ticketscloud.ru; Max-Age=0; Path=/; expires=Wed, 31-Dec-97 23:59:59 GMT
+        Set-Cookie: auth_tkt=; Domain=.ticketscloud.org; Max-Age=0; Path=/; expires=Wed, 31-Dec-97 23:59:59 GMT
         Transfer-Encoding: chunked
 
         {}

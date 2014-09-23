@@ -98,7 +98,7 @@ Deals
         GET /v0/resources/deals HTTP/1.1
         Accept: application/json
         Authorization: key my-very-secret-key
-        Host: ticketscloud.ru
+        Host: ticketscloud.org
 
 
     .. code-block:: http
@@ -162,7 +162,7 @@ Deals
         Authorization: key my-very-secret-key
         Content-Length: 118
         Content-Type: application/json; charset=utf-8
-        Host: ticketscloud.ru
+        Host: ticketscloud.org
 
         {
             "event": "5368b3d49583cb96a0357590",

@@ -41,7 +41,7 @@ create related :ref:`partners <partner>` and their :ref:`keys <apikey>`.
 
         GET /v0/resources/users/53e241d137abbd588116ef3e HTTP/1.1
         Accept: application/json
-        Host: ticketscloud.ru
+        Host: ticketscloud.org
 
 
     **Response**:
@@ -98,8 +98,8 @@ create related :ref:`partners <partner>` and their :ref:`keys <apikey>`.
         PATCH /v0/resources/users/53da11a537abbd06b21cb254 HTTP/1.1
         Accept: application/json
         Content-Length: 45
-        Cookie: auth_tkt="FiYmQwNmIyMWNiMjU0!userid_type:b64unicode"; Domain=ticketscloud.ru; Path=/
-        Host: ticketscloud.ru
+        Cookie: auth_tkt="FiYmQwNmIyMWNiMjU0!userid_type:b64unicode"; Domain=ticketscloud.org; Path=/
+        Host: ticketscloud.org
 
         {"last_name": "Smith", "first_name": "John"}
 
@@ -160,7 +160,7 @@ Collection of :ref:`user` objects.
 
         GET /v0/resources/users HTTP/1.1
         Accept: application/json
-        Host: ticketscloud.ru
+        Host: ticketscloud.org
 
 
     **Response**:
@@ -244,7 +244,7 @@ Collection of :ref:`user` objects.
         POST /v0/resources/users HTTP/1.1
         Accept: application/json
         Content-Length: 48
-        Host: ticketscloud.ru
+        Host: ticketscloud.org
 
         {
             "email": "user@domain.tld",

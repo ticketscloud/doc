@@ -42,7 +42,7 @@ Event
         GET /v0/resources/events/5357baaff51600525c9e1397 HTTP/1.1
         Accept: application/json
         Authorization: key my-secret-api-key
-        Host: ticketscloud.ru
+        Host: ticketscloud.org
 
 
     **Response**:
@@ -121,7 +121,7 @@ Events
         GET /v0/resources/events?filter=my HTTP/1.1
         Accept: application/json
         Authorization: key my-secret-api-key
-        Host: ticketscloud.ru
+        Host: ticketscloud.org
 
     **Response**:
 

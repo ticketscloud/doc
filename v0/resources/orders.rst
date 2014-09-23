@@ -41,7 +41,7 @@ Order
 
         GET /v0/resources/orders/537e1d95f05f951cded9cb02 HTTP/1.1
         Accept: application/json
-        Host: ticketscloud.ru
+        Host: ticketscloud.org
 
 
     **Response**:
@@ -110,7 +110,7 @@ Order
         PATCH /v0/resources/orders/535fb19bdca6a9d1638f2007 HTTP/1.1
         Accept: application/json
         Content-Type: applcation/json
-        Host: ticketscloud.ru
+        Host: ticketscloud.org
 
         {
             "tickets": [
@@ -166,7 +166,7 @@ Order
 
         DELETE /v0/resources/orders/537e1d95f05f951cded9cb02 HTTP/1.1
         Accept: application/json
-        Host: ticketscloud.ru
+        Host: ticketscloud.org
 
     **Response**:
 
@@ -218,7 +218,7 @@ Orders
         GET /v0/resources/orders HTTP/1.1
         Accept: application/json
         Authorization: key my-very-secret-key
-        Host: ticketscloud.ru
+        Host: ticketscloud.org
 
 
     **Response**:

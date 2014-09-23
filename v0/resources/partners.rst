@@ -48,7 +48,7 @@ in the world.
 
         GET /v0/resources/partners/535fb19bdca6a9d1638f2007 HTTP/1.1
         Accept: application/json
-        Host: ticketscloud.ru
+        Host: ticketscloud.org
 
 
     **Response**:
@@ -168,7 +168,7 @@ Collection of :ref:`partner` objects.
 
         GET /v0/resources/partners HTTP/1.1
         Accept: application/json
-        Host: ticketscloud.ru
+        Host: ticketscloud.org
 
 
     **Response**:
