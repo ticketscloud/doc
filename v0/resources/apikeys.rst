@@ -8,16 +8,17 @@ API Keys
 API Key
 =======
 
-API Key is an unique token which used for :ref:`partner` authentication.
-This key should be used with :header:`Authorization` on each request that
-made to the TicketsCloud API.
+API Key is an unique token which uses for :ref:`partner` authentication.
+This key should be specified as value for :header:`Authorization` on each
+request that been made to TicketsCloud API.
 
 .. http:get:: /v0/resources/partners/{idpartner}/api_keys/{idkey}
     :synopsis: Returns an API key information
 
-    Returns an API key information.
+    Returns an information about API key.
 
     :<header Accept: :mimetype:`application/json`
+    :<header Authorization: :ref:`API key <apikey>`
     :param string idpartner: :ref:`partner` ID
     :param string idkey: :ref:`apikey` ID
     :query string fields-schema: :ref:`api/dsl`
@@ -69,6 +70,7 @@ made to the TicketsCloud API.
     Updates API key information.
 
     :<header Accept: :mimetype:`application/json`
+    :<header Authorization: :ref:`API key <apikey>`
     :param string idpartner: :ref:`partner` ID
     :param string idkey: :ref:`apikey` ID
     :query string fields-schema: :ref:`api/dsl`
@@ -127,6 +129,7 @@ made to the TicketsCloud API.
     Removes an API key.
 
     :<header Accept: :mimetype:`application/json`
+    :<header Authorization: :ref:`API key <apikey>`
     :param string idpartner: :ref:`partner` ID
     :param string idkey: :ref:`apikey` ID
     :>header Content-Type: :mimetype:`application/json`
@@ -170,6 +173,7 @@ Manages :ref:`apikey` collection of specific :ref:`partner`.
     Returns list of API keys which :ref:`partner` has.
 
     :<header Accept: :mimetype:`application/json`
+    :<header Authorization: :ref:`API key <apikey>`
     :param string idpartner: :ref:`partner` ID
     :query string ids: List of IDs to return
     :query string fields-schema: :ref:`api/dsl`
@@ -238,6 +242,7 @@ Manages :ref:`apikey` collection of specific :ref:`partner`.
     Creates a new :ref:`apikey`.
 
     :<header Accept: :mimetype:`application/json`
+    :<header Authorization: :ref:`API key <apikey>`
     :param string idpartner: :ref:`partner` ID
     :query string fields-schema: :ref:`api/dsl`
     :<json string name: API key name
