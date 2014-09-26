@@ -1,6 +1,6 @@
-================
-Tickets Ordering
-================
+======
+Orders
+======
 
 .. _order:
 .. _api/resources/order:
