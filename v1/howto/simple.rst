@@ -2,6 +2,8 @@
 Simple integration
 ==================
 
+.. note:: If you're developer jump to :ref:`widget`.
+
 Register on TicketsCloud
 ========================
 
@@ -37,6 +39,8 @@ Distributor to sell tickets on events provided by Organizers.
 .. image:: integration-simple-3.png
 
 
+.. _widget:
+
 Get Your Widget
 ===============
 
@@ -44,3 +48,12 @@ Navigate to "Options" menu, pick the widget code and insert it into your
 website source code. Make sure you followed other instructions on the page.
 
 .. image:: integration-simple-4.png
+
+Bind Your Events With TicketsCloud
+==================================
+
+To let your widget work, you should pass :ref:`event` ID to it as query
+parameter. However, this ID should be native for TicketCloud and unlikely will
+be familiar for your system. To fix this moment you should create binding
+mapping between your event IDs and TicketsCloud ones. To simplify the process
+see :ref:`simpleevents` page.
