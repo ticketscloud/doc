@@ -8,7 +8,7 @@ Venues
 Venue
 =====
 
-.. http:get:: /v0/resources/events/{idevent}/venues/{idvenue}
+.. http:get:: /v0/resources/venues/{idvenue}
     :synopsis: Returns information about the venue
 
     Returns information about the venue.
@@ -35,7 +35,7 @@ Venue
     :code 403: Operation not allowed
 
 
-.. http:patch:: /v0/resources/events/{idevent}/venues/{idvenue}
+.. http:patch:: /v0/resources/venues/{idvenue}
     :synopsis: Updates venue information
 
     Updates venue information.
@@ -69,7 +69,7 @@ Venue
     :code 403: Operation not allowed
 
 
-.. http:delete:: /v0/resources/events/{idevent}/venues/{idvenue}
+.. http:delete:: /v0/resources/venues/{idvenue}
     :synopsis: Deletes a venue
 
     Deletes a venue.
