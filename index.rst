@@ -12,6 +12,7 @@ Contents:
     :maxdepth: 3
 
     v0/index
+    glossary
 
 
 Indices and tables
