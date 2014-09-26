@@ -25,71 +25,124 @@ Simple service for lazy integration
 
         [
             {
+                "created_at": "2014-09-19T10:30:24.388000+00:00",
                 "deal": {
                     "extra": "10.0%",
                     "pfc": false
                 },
-                "event": {
-                    "created_at": null,
-                    "id": "5357baaff51600525c9e1397",
-                    "lifetime": "BEGIN:VEVENT\r\nDTSTART;VALUE=DATE-TIME:20140710T000000\r\nDTEND;VALUE=DATE-TIME:20140910T000000\r\nEND:VEVENT\r\n",
-                    "org": {
-                        "contact": {},
-                        "desc": null,
-                        "id": "5357b929f51600525c9e1396",
-                        "name": "Organizator",
-                        "tags": []
-                    },
-                    "place": {
-                        "address": "Театр кошек Юрия Куклачева",
-                        "city": 524901,
-                        "country": "RU",
-                        "desc": null,
-                        "name": null,
-                        "point": {
-                            "coordinates": [
-                                55.75,
-                                37.6167
-                            ],
-                            "type": "Point"
-                        }
-                    },
-                    "tags": [
-                        "кошка",
-                        "мука"
-                    ],
-                    "title": {
-                        "desc": null,
-                        "text": "Семинар: милые котята"
-                    },
-                    "updated_at": null,
-                    "venue": {}
+                "id": "541c05c037abbd1af8b3398e",
+                "lifetime": "BEGIN:VEVENT\r\nDTSTART:20141001T170000Z\r\nDTEND:20141001T190000Z\r\nEND:VEVENT\r\n",
+                "org": {
+                    "contact": {},
+                    "desc": null,
+                    "id": "5357b929f51600525c9e1396",
+                    "name": "Organizator",
+                    "tags": []
                 },
                 "sets": [
                     {
-                        "amount": 7,
-                        "current_rule": {
-                            "cal": "BEGIN:VEVENT\r\nDTSTART;VALUE=DATE-TIME:20140101T000000\r\nDTEND;VALUE=DATE-TIME:20171231T000000\r\nEND:VEVENT\r\n",
-                            "id": "537368ff1b9bf9d05cca835a",
-                            "price": "100.1"
-                        },
-                        "id": "5360a75a2b590f1c88e8680c",
-                        "name": "Единственные",
-                        "price": "100.1",
+                        "amount": 100,
+                        "id": "541c05c037abbd1af8b33992",
+                        "name": "foo",
+                        "price": "1105.5",
+                        "price_extra": "100.5",
+                        "price_org": "1005.00",
                         "rules": [
                             {
-                                "cal": "BEGIN:VEVENT\r\nDTSTART;VALUE=DATE-TIME:20140101T000000\r\nDTEND;VALUE=DATE-TIME:20171231T000000\r\nEND:VEVENT\r\n",
-                                "id": "537368ff1b9bf9d05cca835a",
-                                "price": "100.1"
-                            },
-                            {
-                                "cal": "BEGIN:VEVENT\r\nDTSTART;VALUE=DATE-TIME:20180101T000000\r\nDTEND;VALUE=DATE-TIME:20201231T000000\r\nEND:VEVENT\r\n",
-                                "id": "537369051b9bf9d05cca835b",
-                                "price": "200.1"
+                                "cal": "BEGIN:VEVENT\r\nDTSTART:20140901T170000Z\r\nDTEND:20141001T190000Z\r\nEND:VEVENT\r\n",
+                                "current": true,
+                                "id": "541c05c037abbd1af8b33990",
+                                "price": "1105.5",
+                                "price_extra": "100.5",
+                                "price_org": "1005.00"
                             }
                         ]
                     }
-                ]
+                ],
+                "tags": [
+                    "концерты",
+                    "вечеринки"
+                ],
+                "title": {
+                    "desc": "Возвращение музыканта в хорошем расположении духа и с новой программой",
+                    "text": "Найк Борзов"
+                },
+                "updated_at": "2014-09-19T10:30:24.793000+00:00",
+                "venue": {
+                    "address": "Кутузовский просп., 25",
+                    "city": {},
+                    "country": {},
+                    "desc": "Представления с участием кошек и Куклачевых",
+                    "id": "53eca6fd0fc5f66be2610d8c",
+                    "name": "Театр кошек Юрия Куклачева",
+                    "point": {
+                        "coordinates": [
+                            55.7444151,
+                            37.5458909
+                        ],
+                        "type": "Point"
+                    }
+                }
+            },
+            {
+                "created_at": "2014-09-19T11:10:31.922000+00:00",
+                "deal": {
+                    "extra": "10.0%",
+                    "pfc": false
+                },
+                "id": "541c0f2737abbd1c64b61b48",
+                "lifetime": "BEGIN:VEVENT\r\nDTSTART:20141001T170000Z\r\nDTEND:20141001T190000Z\r\nEND:VEVENT\r\n",
+                "org": {
+                    "contact": {},
+                    "desc": null,
+                    "id": "5357b929f51600525c9e1396",
+                    "name": "Organizator",
+                    "tags": []
+                },
+                "sets": [
+                    {
+                        "amount": 100,
+                        "id": "541c0f2737abbd1c64b61b4c",
+                        "name": "foo",
+                        "price": "1105.5",
+                        "price_extra": "100.5",
+                        "price_org": "1005.00",
+                        "rules": [
+                            {
+                                "cal": "BEGIN:VEVENT\r\nDTSTART:20140901T170000Z\r\nDTEND:20141001T190000Z\r\nEND:VEVENT\r\n",
+                                "current": true,
+                                "id": "541c0f2737abbd1c64b61b4a",
+                                "price": "1105.5",
+                                "price_extra": "100.5",
+                                "price_org": "1005.00"
+                            }
+                        ]
+                    }
+                ],
+                "tags": [
+                    "концерты",
+                    "вечеринки"
+                ],
+                "title": {
+                    "desc": "Возвращение музыканта в хорошем расположении духа и с новой программой",
+                    "text": "Найк Борзов"
+                },
+                "updated_at": "2014-09-19T11:10:32.235000+00:00",
+                "venue": {
+                    "address": "Кутузовский просп., 25",
+                    "city": {},
+                    "country": {},
+                    "desc": "Представления с участием кошек и Куклачевых",
+                    "id": "53eca6fd0fc5f66be2610d8c",
+                    "name": "Театр кошек Юрия Куклачева",
+                    "point": {
+                        "coordinates": [
+                            55.7444151,
+                            37.5458909
+                        ],
+                        "type": "Point"
+                    }
+                }
             }
         ]
 
@@ -118,70 +171,62 @@ Return specific event with additional information.
         Transfer-Encoding: chunked
 
         {
+            "created_at": "2014-09-19T10:30:24.388000+00:00",
             "deal": {
                 "extra": "10.0%",
                 "pfc": false
             },
-            "event": {
-                "created_at": null,
-                "id": "5357baaff51600525c9e1397",
-                "lifetime": "BEGIN:VEVENT\r\nDTSTART;VALUE=DATE-TIME:20140710T000000\r\nDTEND;VALUE=DATE-TIME:20140910T000000\r\nEND:VEVENT\r\n",
-                "org": {
-                    "contact": {},
-                    "desc": null,
-                    "id": "5357b929f51600525c9e1396",
-                    "name": "Organizator",
-                    "tags": []
-                },
-                "place": {
-                    "address": "Театр кошек Юрия Куклачева",
-                    "city": 524901,
-                    "country": "RU",
-                    "desc": null,
-                    "name": null,
-                    "point": {
-                        "coordinates": [
-                            55.75,
-                            37.6167
-                        ],
-                        "type": "Point"
-                    }
-                },
-                "tags": [
-                    "кошка",
-                    "мука"
-                ],
-                "title": {
-                    "desc": null,
-                    "text": "Семинар: милые котята"
-                },
-                "updated_at": null,
-                "venue": {}
+            "id": "541c05c037abbd1af8b3398e",
+            "lifetime": "BEGIN:VEVENT\r\nDTSTART:20141001T170000Z\r\nDTEND:20141001T190000Z\r\nEND:VEVENT\r\n",
+            "org": {
+                "contact": {},
+                "desc": null,
+                "id": "5357b929f51600525c9e1396",
+                "name": "Organizator",
+                "tags": []
             },
             "sets": [
                 {
-                    "amount": 7,
-                    "current_rule": {
-                        "cal": "BEGIN:VEVENT\r\nDTSTART;VALUE=DATE-TIME:20140101T000000\r\nDTEND;VALUE=DATE-TIME:20171231T000000\r\nEND:VEVENT\r\n",
-                        "id": "537368ff1b9bf9d05cca835a",
-                        "price": "100.1"
-                    },
-                    "id": "5360a75a2b590f1c88e8680c",
-                    "name": "Единственные",
-                    "price": "100.1",
+                    "amount": 100,
+                    "id": "541c05c037abbd1af8b33992",
+                    "name": "foo",
+                    "price": "1105.5",
+                    "price_extra": "100.5",
+                    "price_org": "1005.00",
                     "rules": [
                         {
-                            "cal": "BEGIN:VEVENT\r\nDTSTART;VALUE=DATE-TIME:20140101T000000\r\nDTEND;VALUE=DATE-TIME:20171231T000000\r\nEND:VEVENT\r\n",
-                            "id": "537368ff1b9bf9d05cca835a",
-                            "price": "100.1"
-                        },
-                        {
-                            "cal": "BEGIN:VEVENT\r\nDTSTART;VALUE=DATE-TIME:20180101T000000\r\nDTEND;VALUE=DATE-TIME:20201231T000000\r\nEND:VEVENT\r\n",
-                            "id": "537369051b9bf9d05cca835b",
-                            "price": "200.1"
+                            "cal": "BEGIN:VEVENT\r\nDTSTART:20140901T170000Z\r\nDTEND:20141001T190000Z\r\nEND:VEVENT\r\n",
+                            "current": true,
+                            "id": "541c05c037abbd1af8b33990",
+                            "price": "1105.5",
+                            "price_extra": "100.5",
+                            "price_org": "1005.00"
                         }
                     ]
                 }
-            ]
+            ],
+            "tags": [
+                "концерты",
+                "вечеринки"
+            ],
+            "title": {
+                "desc": "Возвращение музыканта в хорошем расположении духа и с новой программой",
+                "text": "Найк Борзов"
+            },
+            "updated_at": "2014-09-19T10:30:24.793000+00:00",
+            "venue": {
+                "address": "Кутузовский просп., 25",
+                "city": {},
+                "country": {},
+                "desc": "Представления с участием кошек и Куклачевых",
+                "id": "53eca6fd0fc5f66be2610d8c",
+                "name": "Театр кошек Юрия Куклачева",
+                "point": {
+                    "coordinates": [
+                        55.7444151,
+                        37.5458909
+                    ],
+                    "type": "Point"
+                }
+            }
         }
-
