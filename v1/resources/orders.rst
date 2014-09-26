@@ -8,7 +8,7 @@ Orders
 Order
 =====
 
-.. http:get:: /v0/resources/orders/{idorder}
+.. http:get:: /v1/resources/orders/{idorder}
     :synopsis: Returns information about specified order
 
     Returns information about specified order.
@@ -39,7 +39,7 @@ Order
 
     .. code-block:: http
 
-        GET /v0/resources/orders/537e1d95f05f951cded9cb02 HTTP/1.1
+        GET /v1/resources/orders/537e1d95f05f951cded9cb02 HTTP/1.1
         Accept: application/json
         Host: ticketscloud.org
 
@@ -72,7 +72,7 @@ Order
             "value": null
         }
 
-.. http:patch:: /v0/resources/orders/{idorder}
+.. http:patch:: /v1/resources/orders/{idorder}
     :synopsis: Updates order data
 
     Updates order data.
@@ -107,7 +107,7 @@ Order
 
     .. code-block:: http
 
-        PATCH /v0/resources/orders/535fb19bdca6a9d1638f2007 HTTP/1.1
+        PATCH /v1/resources/orders/535fb19bdca6a9d1638f2007 HTTP/1.1
         Accept: application/json
         Content-Type: applcation/json
         Host: ticketscloud.org
@@ -149,7 +149,7 @@ Order
             "value": null
         }
 
-.. http:delete:: /v0/resources/orders/{idorder}
+.. http:delete:: /v1/resources/orders/{idorder}
    :synopsis: Cancels order processing
 
     :<header Accept: :mimetype:`application/json`
@@ -164,7 +164,7 @@ Order
 
     .. code-block:: http
 
-        DELETE /v0/resources/orders/537e1d95f05f951cded9cb02 HTTP/1.1
+        DELETE /v1/resources/orders/537e1d95f05f951cded9cb02 HTTP/1.1
         Accept: application/json
         Host: ticketscloud.org
 
@@ -186,7 +186,7 @@ Order
 Orders
 ======
 
-.. http:get:: /v0/resources/orders
+.. http:get:: /v1/resources/orders
     :synopsis: Returns list of orders
 
     :<header Accept: :mimetype:`application/json`
@@ -215,7 +215,7 @@ Orders
 
     .. code-block:: http
 
-        GET /v0/resources/orders HTTP/1.1
+        GET /v1/resources/orders HTTP/1.1
         Accept: application/json
         Authorization: key my-very-secret-key
         Host: ticketscloud.org
@@ -299,7 +299,7 @@ to buy:
 
 .. code-block:: http
 
-    POST /v0/resources/orders HTTP/1.1
+    POST /v1/resources/orders HTTP/1.1
     Authorization: key my-very-secret-key
     Content-Type: application/json
 
@@ -314,7 +314,7 @@ just some "random" tickets without explicitly specifying their IDs:
 
 .. code-block:: http
 
-    POST /v0/resources/orders HTTP/1.1
+    POST /v1/resources/orders HTTP/1.1
     Authorization: key my-very-secret-key
     Content-Type: application/json
 
@@ -339,7 +339,7 @@ ordered tickets:
 
 .. code-block:: text
 
-    PATCH /v0/resources/orders/537e1d95f05f951cded9cb02 HTTP/1.1
+    PATCH /v1/resources/orders/537e1d95f05f951cded9cb02 HTTP/1.1
     Authorization: key my-very-secret-key
     Content-Type: application/json
 
@@ -349,7 +349,7 @@ ordered tickets:
 
 .. code-block:: text
 
-    PATCH /v0/resources/orders/{idorder} HTTP/1.1
+    PATCH /v1/resources/orders/{idorder} HTTP/1.1
     Authorization: key my-very-secret-key
     Content-Type: application/json
 
@@ -373,7 +373,7 @@ to set status as `in_progress`:
 
 .. code-block:: http
 
-    PATCH /v0/resources/orders/537e1d95f05f951cded9cb02 HTTP/1.1
+    PATCH /v1/resources/orders/537e1d95f05f951cded9cb02 HTTP/1.1
     Authorization: key my-very-secret-key
     Content-Type: application/json
 
@@ -389,7 +389,7 @@ When order had been paid, it must be updated to set status as `done`:
 
 .. code-block:: http
 
-    PATCH /v0/resources/orders/537e1d95f05f951cded9cb02 HTTP/1.1
+    PATCH /v1/resources/orders/537e1d95f05f951cded9cb02 HTTP/1.1
     Authorization: key my-very-secret-key
     Content-Type: application/json
 
@@ -406,14 +406,14 @@ easy by order deletion:
 
 .. code-block:: http
 
-    DELETE /v0/resources/orders/537e1d95f05f951cded9cb02 HTTP/1.1
+    DELETE /v1/resources/orders/537e1d95f05f951cded9cb02 HTTP/1.1
     Authorization: key my-very-secret-key
 
 This operation is equivalent to manually status update to `canceled`:
 
 .. code-block:: http
 
-    PATCH /v0/resources/orders/537e1d95f05f951cded9cb02 HTTP/1.1
+    PATCH /v1/resources/orders/537e1d95f05f951cded9cb02 HTTP/1.1
     Authorization: key my-very-secret-key
     Content-Type: application/json
 
@@ -427,7 +427,7 @@ Update Customer Information
 
 .. code-block:: http
 
-    PATCH /v0/resources/orders/537e1d95f05f951cded9cb02 HTTP/1.1
+    PATCH /v1/resources/orders/537e1d95f05f951cded9cb02 HTTP/1.1
     Authorization: key my-very-secret-key
     Content-Type: application/json
 

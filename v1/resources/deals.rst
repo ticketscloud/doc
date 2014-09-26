@@ -12,7 +12,7 @@ they are defines the final price for them depending on various `conditions`.
 Deal
 ====
 
-.. http:get:: /v0/resources/deals/{iddeal}
+.. http:get:: /v1/resources/deals/{iddeal}
     :synopsis: Return information about a deal
 
     :<header Accept: :mimetype:`application/json`
@@ -37,7 +37,7 @@ Deal
     :code 401: Authentication required
     :code 403: Operation not allowed
 
-.. http:patch:: /v0/resources/deals/{iddeal}
+.. http:patch:: /v1/resources/deals/{iddeal}
     :synopsis: Updates a deal
 
     Updates a :ref:`deal`.
@@ -70,7 +70,7 @@ Deal
 Deals
 =====
 
-.. http:get:: /v0/resources/deals
+.. http:get:: /v1/resources/deals
     :synopsis: Returns list of active deals
 
     :<header Accept: :mimetype:`application/json`
@@ -95,7 +95,7 @@ Deals
 
     .. code-block:: http
 
-        GET /v0/resources/deals HTTP/1.1
+        GET /v1/resources/deals HTTP/1.1
         Accept: application/json
         Authorization: key my-very-secret-key
         Host: ticketscloud.org
@@ -127,7 +127,7 @@ Deals
         ]
 
 
-.. http:post:: /v0/resources/deals
+.. http:post:: /v1/resources/deals
     :synopsis: Creates a new deal
 
     Creates a new :ref:`deal`.
@@ -157,7 +157,7 @@ Deals
 
     .. code-block:: http
 
-        POST /v0/resources/deals HTTP/1.1
+        POST /v1/resources/deals HTTP/1.1
         Accept: application/json
         Authorization: key my-very-secret-key
         Content-Length: 118

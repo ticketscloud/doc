@@ -8,7 +8,7 @@ Tickets Sets
 Tickets Set
 ===========
 
-.. http:get:: /v0/resources/events/{idevent}/sets/{idset}
+.. http:get:: /v1/resources/events/{idevent}/sets/{idset}
     :synopsis: Returns information about the set
 
     Returns information about the set.
@@ -38,7 +38,7 @@ Tickets Set
     :code 403: Operation not allowed
 
 
-.. http:patch:: /v0/resources/events/{idevent}/sets/{idset}
+.. http:patch:: /v1/resources/events/{idevent}/sets/{idset}
     :synopsis: Updates set information
 
     Updates set information.
@@ -70,7 +70,7 @@ Tickets Set
     :code 403: Operation not allowed
 
 
-.. http:delete:: /v0/resources/events/{idevent}/sets/{idset}
+.. http:delete:: /v1/resources/events/{idevent}/sets/{idset}
     :synopsis: Deletes a set
 
     Deletes a set.
@@ -88,9 +88,9 @@ Tickets Set
 .. _api/resources/sets:
 
 Tickets Sets
-===========
+============
 
-.. http:get:: /v0/resources/events/{idevent}/sets
+.. http:get:: /v1/resources/events/{idevent}/sets
     :synopsis: Returns list of existed sets
 
     Returns list of existed sets
@@ -122,7 +122,7 @@ Tickets Sets
     :code 403: Operation not allowed
 
 
-.. http:post:: /v0/resources/events/{idevent}/sets
+.. http:post:: /v1/resources/events/{idevent}/sets
     :synopsis: Creates a new set
 
     Creates a new set.

@@ -8,7 +8,7 @@ Events
 Event
 =====
 
-.. http:get:: /v0/resources/events/{idevent}
+.. http:get:: /v1/resources/events/{idevent}
     :synopsis: Returns information about the event
 
     Returns information about the event.
@@ -39,7 +39,7 @@ Event
 
     .. code-block:: http
 
-        GET /v0/resources/events/5357baaff51600525c9e1397 HTTP/1.1
+        GET /v1/resources/events/5357baaff51600525c9e1397 HTTP/1.1
         Accept: application/json
         Authorization: key my-secret-api-key
         Host: ticketscloud.org
@@ -73,7 +73,7 @@ Event
             "age_rating": 0
         }
 
-.. http:patch:: /v0/resources/events/{idevent}
+.. http:patch:: /v1/resources/events/{idevent}
     :synopsis: Creates a new event
 
     Creates a new event.
@@ -107,7 +107,7 @@ Event
     :code 401: Authentication required
     :code 403: Operation not allowed
 
-.. http:delete:: /v0/resources/events/{idevent}
+.. http:delete:: /v1/resources/events/{idevent}
     :synopsis: Removes an event
 
     Removes an event.
@@ -126,7 +126,7 @@ Event
 
     .. code-block:: http
 
-        DELETE /v0/resources/events/535fb19bdca6a90a9ca87882 HTTP/1.1
+        DELETE /v1/resources/events/535fb19bdca6a90a9ca87882 HTTP/1.1
         Accept: application/json
         Authorization: key my-very-secret-key
         Host: ticketscloud.org
@@ -148,7 +148,7 @@ Event
 Events
 ======
 
-.. http:get:: /v0/resources/events
+.. http:get:: /v1/resources/events
     :synopsis: Returns list of existed events
 
     :<header Accept: :mimetype:`application/json`
@@ -181,7 +181,7 @@ Events
 
     .. code-block:: http
 
-        GET /v0/resources/events HTTP/1.1
+        GET /v1/resources/events HTTP/1.1
         Accept: application/json
         Authorization: key my-secret-api-key
         Host: ticketscloud.org
@@ -283,7 +283,7 @@ Events
         ]
 
 
-.. http:post:: /v0/resources/events
+.. http:post:: /v1/resources/events
     :synopsis: Creates a new event
 
     Creates a new event.

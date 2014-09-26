@@ -12,7 +12,7 @@ API Key is an unique token which uses for :ref:`partner` authentication.
 This key should be specified as value for :header:`Authorization` on each
 request that been made to TicketsCloud API.
 
-.. http:get:: /v0/resources/partners/{idpartner}/api_keys/{idkey}
+.. http:get:: /v1/resources/partners/{idpartner}/api_keys/{idkey}
     :synopsis: Returns an API key information
 
     Returns an information about API key.
@@ -39,7 +39,7 @@ request that been made to TicketsCloud API.
 
     .. code-block:: http
 
-        GET /v0/resources/partners/535fb19bdca6a9d1638f2007/api_keys/53f1d89437abbd0a9ca87882 HTTP/1.1
+        GET /v1/resources/partners/535fb19bdca6a9d1638f2007/api_keys/53f1d89437abbd0a9ca87882 HTTP/1.1
         Accept: application/json
         Authorization: key my-very-secret-key
         Host: ticketscloud.org
@@ -64,7 +64,7 @@ request that been made to TicketsCloud API.
 
 
 
-.. http:patch:: /v0/resources/partners/{idpartner}/api_keys/{idkey}
+.. http:patch:: /v1/resources/partners/{idpartner}/api_keys/{idkey}
     :synopsis: Updates API key information
 
     Updates API key information.
@@ -93,7 +93,7 @@ request that been made to TicketsCloud API.
 
     .. code-block:: http
 
-        PATCH /v0/resources/partners/535fb19bdca6a9d1638f2007/api_keys/53f1d89437abbd0a9ca87882 HTTP/1.1
+        PATCH /v1/resources/partners/535fb19bdca6a9d1638f2007/api_keys/53f1d89437abbd0a9ca87882 HTTP/1.1
         Accept: application/json
         Authorization: key my-very-secret-key
         Content-Length: 21
@@ -123,7 +123,7 @@ request that been made to TicketsCloud API.
         }
 
 
-.. http:delete:: /v0/resources/partners/{idparner}/api_keys/{idkey}
+.. http:delete:: /v1/resources/partners/{idparner}/api_keys/{idkey}
     :synopsis: Removes an API key
 
     Removes an API key.
@@ -143,7 +143,7 @@ request that been made to TicketsCloud API.
 
     .. code-block:: http
 
-        DELETE /v0/resources/partners/535fb19bdca6a9d1638f2007/api_keys/53f1d89437abbd0a9ca87882 HTTP/1.1
+        DELETE /v1/resources/partners/535fb19bdca6a9d1638f2007/api_keys/53f1d89437abbd0a9ca87882 HTTP/1.1
         Accept: application/json
         Authorization: key my-very-secret-key
         Host: ticketscloud.org
@@ -167,7 +167,7 @@ API Keys
 
 Manages :ref:`apikey` collection of specific :ref:`partner`.
 
-.. http:get:: /v0/resources/partners/{idpartner}/api_keys
+.. http:get:: /v1/resources/partners/{idpartner}/api_keys
     :synopsis: Returns list of API keys
 
     Returns list of API keys which :ref:`partner` has.
@@ -194,7 +194,7 @@ Manages :ref:`apikey` collection of specific :ref:`partner`.
 
     .. code-block:: http
 
-        GET /v0/resources/partners/535fb19bdca6a9d1638f2007/api_keys HTTP/1.1
+        GET /v1/resources/partners/535fb19bdca6a9d1638f2007/api_keys HTTP/1.1
         Accept: application/json
         Authorization: key my-very-secret-key
         Host: ticketscloud.org
@@ -236,7 +236,7 @@ Manages :ref:`apikey` collection of specific :ref:`partner`.
         ]
 
 
-.. http:post:: /v0/resources/partners/{idpartner}/api_keys
+.. http:post:: /v1/resources/partners/{idpartner}/api_keys
     :synopsis: Creates a new API key
 
     Creates a new :ref:`apikey`.
@@ -264,7 +264,7 @@ Manages :ref:`apikey` collection of specific :ref:`partner`.
 
     .. code-block:: http
 
-        POST /v0/resources/partners/535fb19bdca6a9d1638f2007/api_keys HTTP/1.1
+        POST /v1/resources/partners/535fb19bdca6a9d1638f2007/api_keys HTTP/1.1
         Accept: application/json
         Authorization: key my-very-secret-key
         Content-Length: 20

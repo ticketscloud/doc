@@ -11,7 +11,7 @@ Contents:
 .. toctree::
     :maxdepth: 3
 
-    v0/index
+    v1/index
     glossary
 
 

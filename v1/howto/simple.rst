@@ -7,7 +7,7 @@ Register on TicketsCloud
 
 First of all, you should register yourself on https://ticketscloud.org
 
-.. image:: integration-easy-0.png
+.. image:: integration-simple-0.png
 
 
 Provide Base Information About Your Company

@@ -8,7 +8,7 @@ Tickets
 Ticket
 ======
 
-.. http:get:: /v0/resources/events/{idevent}/sets/{idset}/tickets/{idticket}
+.. http:get:: /v1/resources/events/{idevent}/sets/{idset}/tickets/{idticket}
     :synopsis: Returns information about the ticket
 
     Returns information about the ticket.
@@ -36,7 +36,7 @@ Ticket
     :code 403: Operation not allowed
 
 
-.. http:patch:: /v0/resources/events/{idevent}/sets/{idset}/tickets/{idticket}
+.. http:patch:: /v1/resources/events/{idevent}/sets/{idset}/tickets/{idticket}
     :synopsis: Updates ticket information
 
     Updates ticket information.
@@ -65,7 +65,7 @@ Ticket
     :code 403: Operation not allowed
 
 
-.. http:delete:: /v0/resources/events/{idevent}/sets/{idset}/tickets/{idticket}
+.. http:delete:: /v1/resources/events/{idevent}/sets/{idset}/tickets/{idticket}
     :synopsis: Deletes a ticket
 
     Deletes a ticket.
@@ -86,7 +86,7 @@ Ticket
 Tickets
 =======
 
-.. http:get:: /v0/resources/tickets
+.. http:get:: /v1/resources/tickets
     :synopsis: Returns list of existed tickets
 
     :<header Accept: :mimetype:`application/json`
@@ -112,7 +112,7 @@ Tickets
     :code 403: Operation not allowed
 
 
-.. http:post:: /v0/resources/tickets
+.. http:post:: /v1/resources/tickets
     :synopsis: Creates a new ticket
 
     Creates a new ticket.

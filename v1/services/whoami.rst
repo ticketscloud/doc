@@ -3,7 +3,7 @@
 Who Am I
 ========
 
-.. http:post:: /v0/services/whoami
+.. http:post:: /v1/services/whoami
     :synopsis: Initiates user cookie session
 
     Initiates user cookie session.
@@ -31,7 +31,7 @@ Who Am I
 
     .. sourcecode:: http
 
-        POST /v0/services/whoami HTTP/1.1
+        POST /v1/services/whoami HTTP/1.1
         Accept: application/json
         Content-Length: 49
         Content-Type: application/json; charset=utf-8
@@ -69,7 +69,7 @@ Who Am I
         }
 
 
-.. http:get:: /v0/services/whoami
+.. http:get:: /v1/services/whoami
     :synopsis: Returns information about authenticated user
 
     Returns information about authenticated user.
@@ -93,7 +93,7 @@ Who Am I
 
     .. sourcecode:: http
 
-        GET /v0/services/whoami HTTP/1.1
+        GET /v1/services/whoami HTTP/1.1
         Accept: application/json
         Cookie: auth_tkt="FiYmQwNmIyMWNiMjU0!userid_type:b64unicode"; Domain=ticketscloud.org; Path=/
         Host: ticketscloud.org
@@ -121,7 +121,7 @@ Who Am I
         }
 
 
-.. http:delete:: /v0/services/whoami
+.. http:delete:: /v1/services/whoami
     :synopsis: Closes user cookie session
 
     Closes user cookie session.
@@ -137,7 +137,7 @@ Who Am I
 
     .. sourcecode:: http
 
-        DELETE /v0/services/whoami HTTP/1.1
+        DELETE /v1/services/whoami HTTP/1.1
         Accept: application/json
         Cookie: auth_tkt="FiYmQwNmIyMWNiMjU0!userid_type:b64unicode"; Domain=ticketscloud.org; Path=/
         Host: ticketscloud.org

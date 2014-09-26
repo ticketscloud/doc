@@ -4,13 +4,13 @@
 Simple service for lazy integration
 ===================================
 
-.. http:get:: /v0/services/simple/events
+.. http:get:: /v1/services/simple/events
 
     **Request**
 
     .. code-block:: http
 
-        GET /v0/services/simple/events HTTP/1.1
+        GET /v1/services/simple/events HTTP/1.1
         Accept: application/json
         Authorization: key your-very-secret-key
         Host: ticketscloud.org
@@ -148,7 +148,7 @@ Simple service for lazy integration
 
 
 
-.. http:get:: /v0/services/simple/events/{idevent}
+.. http:get:: /v1/services/simple/events/{idevent}
 
 Return specific event with additional information.
 
@@ -156,7 +156,7 @@ Return specific event with additional information.
 
     .. code-block:: http
 
-        GET /v0/services/simple/events/5357baaff51600525c9e1397 HTTP/1.1
+        GET /v1/services/simple/events/5357baaff51600525c9e1397 HTTP/1.1
         Accept: application/json
         Authorization: key your-very-secret-key
         Host: ticketscloud.org

@@ -8,7 +8,7 @@ Venues
 Venue
 =====
 
-.. http:get:: /v0/resources/venues/{idvenue}
+.. http:get:: /v1/resources/venues/{idvenue}
     :synopsis: Returns information about the venue
 
     Returns information about the venue.
@@ -35,7 +35,7 @@ Venue
     :code 403: Operation not allowed
 
 
-.. http:patch:: /v0/resources/venues/{idvenue}
+.. http:patch:: /v1/resources/venues/{idvenue}
     :synopsis: Updates venue information
 
     Updates venue information.
@@ -69,7 +69,7 @@ Venue
     :code 403: Operation not allowed
 
 
-.. http:delete:: /v0/resources/venues/{idvenue}
+.. http:delete:: /v1/resources/venues/{idvenue}
     :synopsis: Deletes a venue
 
     Deletes a venue.
@@ -88,7 +88,7 @@ Venue
 Venues
 ======
 
-.. http:get:: /v0/resources/venues
+.. http:get:: /v1/resources/venues
     :synopsis: Returns list of existed venues
 
     :<header Accept: :mimetype:`application/json`
@@ -117,7 +117,7 @@ Venues
     :code 403: Operation not allowed
 
 
-.. http:post:: /v0/resources/venues
+.. http:post:: /v1/resources/venues
     :synopsis: Creates a new venue
 
     Creates a new venue.

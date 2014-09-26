@@ -85,7 +85,7 @@ Request Headers
 
     .. code-block:: http
 
-        GET /v0/resources/events HTTP/1.1
+        GET /v1/resources/events HTTP/1.1
         Accept: application/json
         Authorization: Key 6e6124cfc954496a850aa959ef2f64fa
         Host: ticketscloud.org
@@ -290,7 +290,7 @@ For example, we need to receive our current user ID and email fields only:
 
 .. sourcecode:: http
 
-    GET /v0/services/whoami?fields-schema=id,email HTTP/1.1
+    GET /v1/services/whoami?fields-schema=id,email HTTP/1.1
     Accept: application/json
     Cookie: auth_tkt="FiYmQwNmIyMWNiMjU0!userid_type:b64unicode"; Domain=ticketscloud.org; Path=/
     Host: ticketscloud.org

@@ -12,7 +12,7 @@ Users are represents the humans which works with TicketsCloud API: each has
 own credentials and association. Users can only update their information,
 create related :ref:`partners <partner>` and their :ref:`keys <apikey>`.
 
-.. http:get:: /v0/resources/users/{iduser}
+.. http:get:: /v1/resources/users/{iduser}
     :synopsis: Returns user information
 
     Returns information about user by the specified ID.
@@ -39,7 +39,7 @@ create related :ref:`partners <partner>` and their :ref:`keys <apikey>`.
 
     .. code-block:: http
 
-        GET /v0/resources/users/53e241d137abbd588116ef3e HTTP/1.1
+        GET /v1/resources/users/53e241d137abbd588116ef3e HTTP/1.1
         Accept: application/json
         Host: ticketscloud.org
 
@@ -64,7 +64,7 @@ create related :ref:`partners <partner>` and their :ref:`keys <apikey>`.
         }
 
 
-.. http:patch:: /v0/resources/users/{iduser}
+.. http:patch:: /v1/resources/users/{iduser}
     :synopsis: Updates user information
 
     Updates user information.
@@ -95,7 +95,7 @@ create related :ref:`partners <partner>` and their :ref:`keys <apikey>`.
 
     .. code-block:: http
 
-        PATCH /v0/resources/users/53da11a537abbd06b21cb254 HTTP/1.1
+        PATCH /v1/resources/users/53da11a537abbd06b21cb254 HTTP/1.1
         Accept: application/json
         Content-Length: 45
         Cookie: auth_tkt="FiYmQwNmIyMWNiMjU0!userid_type:b64unicode"; Domain=ticketscloud.org; Path=/
@@ -130,7 +130,7 @@ Users
 
 Collection of :ref:`user` objects.
 
-.. http:get:: /v0/resources/users
+.. http:get:: /v1/resources/users
     :synopsis: Returns list of existed users
 
     Returns list of existed :ref:`users <user>`.
@@ -158,7 +158,7 @@ Collection of :ref:`user` objects.
 
     .. code-block:: http
 
-        GET /v0/resources/users HTTP/1.1
+        GET /v1/resources/users HTTP/1.1
         Accept: application/json
         Host: ticketscloud.org
 
@@ -215,7 +215,7 @@ Collection of :ref:`user` objects.
         ]
 
 
-.. http:post:: /v0/resources/users
+.. http:post:: /v1/resources/users
     :synopsis: Registers a new user
 
     Registers a new :ref:`user <user>`.
@@ -241,7 +241,7 @@ Collection of :ref:`user` objects.
 
     .. code-block:: http
 
-        POST /v0/resources/users HTTP/1.1
+        POST /v1/resources/users HTTP/1.1
         Accept: application/json
         Content-Length: 48
         Host: ticketscloud.org

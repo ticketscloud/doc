@@ -15,7 +15,7 @@ Partner represents some organization which may be managed by multiple different
 in the world.
 
 
-.. http:get:: /v0/resources/partners/{idpartner}
+.. http:get:: /v1/resources/partners/{idpartner}
     :synopsis: Returns partner information
 
     Returns partner information.
@@ -46,7 +46,7 @@ in the world.
 
     .. code-block:: http
 
-        GET /v0/resources/partners/535fb19bdca6a9d1638f2007 HTTP/1.1
+        GET /v1/resources/partners/535fb19bdca6a9d1638f2007 HTTP/1.1
         Accept: application/json
         Host: ticketscloud.org
 
@@ -90,7 +90,7 @@ in the world.
             }
         }
 
-.. http:patch:: /v0/resources/partners/{idpartner}
+.. http:patch:: /v1/resources/partners/{idpartner}
     :synopsis: Updates specific partner fields
 
     Updates specific partner fields.
@@ -135,7 +135,7 @@ Partners
 
 Collection of :ref:`partner` objects.
 
-.. http:get:: /v0/resources/partners
+.. http:get:: /v1/resources/partners
     :synopsis: Returns list of Partners
 
     Returns list of :ref:`partner` objects.
@@ -166,7 +166,7 @@ Collection of :ref:`partner` objects.
 
     .. code-block:: http
 
-        GET /v0/resources/partners HTTP/1.1
+        GET /v1/resources/partners HTTP/1.1
         Accept: application/json
         Host: ticketscloud.org
 

@@ -10,7 +10,7 @@ Geo Data
 Countries
 =========
 
-.. http:get:: /v0/resources/countries
+.. http:get:: /v1/resources/countries
     :synopsis: Returns list of countries
 
     Returns list of countries.
@@ -32,7 +32,7 @@ Countries
 
     .. sourcecode:: http
 
-        GET /v0/resources/countries HTTP/1.1
+        GET /v1/resources/countries HTTP/1.1
         Accept: application/json
         Host: ticketscloud.org
 
@@ -214,7 +214,7 @@ Countries
 
     .. sourcecode:: http
 
-        GET /v0/resources/countries?suggest=Rus HTTP/1.1
+        GET /v1/resources/countries?suggest=Rus HTTP/1.1
         Accept: application/json
         Host: ticketscloud.org
 
@@ -243,7 +243,7 @@ Countries
 Cities
 ======
 
-.. http:get:: /v0/resources/cities
+.. http:get:: /v1/resources/cities
     :synopsis: Returns list of cities
 
     Returns list of cities.
@@ -267,7 +267,7 @@ Cities
 
     .. code-block:: http
 
-        GET /v0/resources/cities HTTP/1.1
+        GET /v1/resources/cities HTTP/1.1
         Accept: application/json
         Host: ticketscloud.org
 
