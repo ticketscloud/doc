@@ -17,6 +17,7 @@ Event
     :<header Authorization: :ref:`API key <apikey>`
     :param string idevent: :ref:`event` ID
     :query string fields-schema: :ref:`api/dsl`
+    :query string filter: presetted filters
     :>header Content-Type: :mimetype:`application/json`
     :>header Transfer-Encoding: ``chunked``
     :>json number age_rating: Age rating
