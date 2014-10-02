@@ -6,6 +6,10 @@ Simple service for lazy integration
 
 .. http:get:: /v1/services/simple/events
 
+    :query updated_at__gt: Returns events which were updated since the specified
+        date. The date should be defined in `ISO-8601
+        <https://en.wikipedia.org/wiki/ISO_8601>`_ format.
+
     **Request**
 
     .. code-block:: http
