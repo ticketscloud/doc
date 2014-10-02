@@ -33,6 +33,7 @@ in the world.
     :>json string id: Partner ID
     :>json object legal: Related Legal
     :>json string name: Partner name
+    :>json array media: :ref:`Media files <att>`
     :>json boolean removed: Deleted flag
     :>json array roles: Assigned roles
     :>json array tags: Tags
@@ -104,6 +105,7 @@ in the world.
     :<json string director: CEO
     :<json object legal: Related Legal
     :<json string name: Partner name
+    :<json array media: :ref:`Media files <att>`
     :<json boolean removed: Deleted flag
     :<json array roles: Assigned roles
     :<json array tags: Tags
@@ -117,6 +119,7 @@ in the world.
     :>json string director: CEO
     :>json string id: Partner ID
     :>json object legal: Related Legal
+    :>json array media: :ref:`Media files <att>`
     :>json string name: Partner name
     :>json boolean removed: Deleted flag
     :>json array roles: Assigned roles
@@ -152,6 +155,7 @@ Collection of :ref:`partner` objects.
     :>json string director: CEO
     :>json string id: Partner ID
     :>json object legal: Related Legal
+    :>json array media: :ref:`Media files <att>`
     :>json string name: Partner name
     :>json boolean removed: Deleted flag
     :>json array roles: Assigned roles

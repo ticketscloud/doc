@@ -24,6 +24,7 @@ Event
     :>json datetime created_at: Event creation timestamp
     :>json string id: :ref:`event` ID
     :>json string lifetime: Event lifetime in iCal format
+    :>json array media: :ref:`Media files <att>`
     :>json string org: :ref:`Organizer <partner>` ID
     :>json boolean removed: Deletion flag
     :>json string status: Event status
@@ -95,6 +96,7 @@ Event
     :>json number age_rating: Age rating
     :>json datetime created_at: Event creation timestamp
     :>json string id: :ref:`event` ID
+    :>json array media: :ref:`Media files <att>`
     :>json string lifetime: Event lifetime in iCal format
     :>json string org: :ref:`Organizer <partner>` ID
     :>json boolean removed: Deletion flag
@@ -165,6 +167,7 @@ Events
     :>jsonarr number age_rating: Age rating
     :>jsonarr datetime created_at: Event creation timestamp
     :>jsonarr string id: :ref:`event` ID
+    :>json array media: :ref:`Media files <att>`
     :>jsonarr string lifetime: Event lifetime in iCal format
     :>jsonarr string org: :ref:`Organizer <partner>` ID
     :>jsonarr boolean removed: Deletion flag
@@ -305,6 +308,7 @@ Events
     :>json number age_rating: Age rating
     :>json datetime created_at: Event creation timestamp
     :>json string id: :ref:`event` ID
+    :>json array media: :ref:`Media files <att>`
     :>json string lifetime: Event lifetime in iCal format
     :>json string org: :ref:`Organizer <partner>` ID
     :>json boolean removed: Deletion flag
