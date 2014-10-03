@@ -21,6 +21,7 @@ Tickets Set
     :>header Content-Type: :mimetype:`application/json`
     :>header Transfer-Encoding: ``chunked``
     :>json number amount: Amount tickets in set
+    :>json number amount_vacant: Amount vacant tickets in set
     :>json datetime created_at: Set creation timestamp
     :>json string current_price: Current price for tickets in set
     :>json object current_rule: Current price calculation rule
@@ -53,6 +54,7 @@ Tickets Set
     :>header Content-Type: :mimetype:`application/json`
     :>header Transfer-Encoding: ``chunked``
     :>json number amount: Amount tickets in set
+    :>json number amount_vacant: Amount vacant tickets in set
     :>json datetime created_at: Set creation timestamp
     :>json string current_price: Current price for tickets in set
     :>json object current_rule: Current price calculation rule
@@ -105,6 +107,7 @@ Tickets Sets
     :>header Content-Type: :mimetype:`application/json`
     :>header Transfer-Encoding: ``chunked``
     :>jsonarr number amount: Amount tickets in set
+    :>jsonarr number amount_vacant: Amount vacant tickets in set
     :>jsonarr datetime created_at: Set creation timestamp
     :>jsonarr string current_price: Current price for tickets in set
     :>jsonarr object current_rule: Current price calculation rule
@@ -135,6 +138,7 @@ Tickets Sets
     :>header Content-Type: :mimetype:`application/json`
     :>header Transfer-Encoding: ``chunked``
     :>json number amount: Amount tickets in set
+    :>json number amount_vacant: Amount vacant tickets in set
     :>json datetime created_at: Set creation timestamp
     :>json string current_price: Current price for tickets in set
     :>json object current_rule: Current price calculation rule

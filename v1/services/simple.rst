@@ -46,6 +46,7 @@ Simple service for lazy integration
                 "sets": [
                     {
                         "amount": 100,
+                        "amount_vacant": 13,
                         "id": "541c05c037abbd1af8b33992",
                         "name": "foo",
                         "price": "1105.5",
@@ -106,6 +107,7 @@ Simple service for lazy integration
                 "sets": [
                     {
                         "amount": 100,
+                        "amount_vacant": 13,
                         "id": "541c0f2737abbd1c64b61b4c",
                         "name": "foo",
                         "price": "1105.5",
@@ -192,6 +194,7 @@ Return specific event with additional information.
             "sets": [
                 {
                     "amount": 100,
+                    "amount_vacant": 13,
                     "id": "541c05c037abbd1af8b33992",
                     "name": "foo",
                     "price": "1105.5",
