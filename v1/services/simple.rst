@@ -18,7 +18,7 @@ Simple service for lazy integration
     :>jsonarr datetime created_at: :ref:`Event <event>` creation timestamp
     :>jsonarr object deal: :ref:`Deal <deal>` terms
     :>jsonarr string id: :ref:`Event <event>` id
-    :>jsonarr string lifetime: :ref:`Event <event>` duration in iCal format
+    :>jsonarr string lifetime: :ref:`Event <event>` duration in :rfc:`iCal format <5545>`
     :>jsonarr object org: :ref:`Organizer <partner>` information object
     :>jsonarr array sets: List of available :ref:`sets <set>` including:
 
@@ -198,7 +198,7 @@ Simple service for lazy integration
     :>json datetime created_at: :ref:`Event <event>` creation timestamp
     :>json object deal: :ref:`Deal <deal>` terms
     :>json string id: :ref:`Event <event>` id
-    :>json string lifetime: :ref:`Event <event>` duration in iCal format
+    :>json string lifetime: :ref:`Event <event>` duration in :rfc:`iCal format <5545>`
     :>json object org: :ref:`Organizer <partner>` information object
     :>json array sets: List of available :ref:`sets <set>` including:
 

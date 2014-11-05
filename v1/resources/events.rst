@@ -23,7 +23,7 @@ Event
     :>json number age_rating: Age rating
     :>json datetime created_at: Event creation timestamp
     :>json string id: :ref:`event` ID
-    :>json string lifetime: Event lifetime in iCal format
+    :>json string lifetime: Event lifetime in :rfc:`iCal format <5545>`
     :>json array media: :ref:`Media files <att>`
     :>json string org: :ref:`Organizer <partner>` ID
     :>json boolean removed: Deletion flag
@@ -85,7 +85,7 @@ Event
     :param string idevent: :ref:`event` ID
     :query string fields-schema: :ref:`api/dsl`
     :<json number age_rating: age rating
-    :<json string lifetime: Event lifetime in iCal format
+    :<json string lifetime: Event lifetime in :rfc:`iCal format <5545>`
     :<json boolean removed: Deletion flag
     :<json string status: Event status
     :<json array tags: Event tags
@@ -97,7 +97,7 @@ Event
     :>json datetime created_at: Event creation timestamp
     :>json string id: :ref:`event` ID
     :>json array media: :ref:`Media files <att>`
-    :>json string lifetime: Event lifetime in iCal format
+    :>json string lifetime: Event lifetime in :rfc:`iCal format <5545>`
     :>json string org: :ref:`Organizer <partner>` ID
     :>json boolean removed: Deletion flag
     :>json string status: Event status
@@ -168,7 +168,7 @@ Events
     :>jsonarr datetime created_at: Event creation timestamp
     :>jsonarr string id: :ref:`event` ID
     :>json array media: :ref:`Media files <att>`
-    :>jsonarr string lifetime: Event lifetime in iCal format
+    :>jsonarr string lifetime: Event lifetime in :rfc:`iCal format <5545>`
     :>jsonarr string org: :ref:`Organizer <partner>` ID
     :>jsonarr boolean removed: Deletion flag
     :>jsonarr string status: Event status
@@ -297,7 +297,7 @@ Events
     :param string idevent: :ref:`event` ID
     :query string fields-schema: :ref:`api/dsl`
     :<json number age_rating: age rating
-    :<json string lifetime: Event lifetime in iCal format
+    :<json string lifetime: Event lifetime in :rfc:`iCal format <5545>`
     :<json boolean removed: Deletion flag
     :<json string status: Event status
     :<json array tags: Event tags
@@ -309,7 +309,7 @@ Events
     :>json datetime created_at: Event creation timestamp
     :>json string id: :ref:`event` ID
     :>json array media: :ref:`Media files <att>`
-    :>json string lifetime: Event lifetime in iCal format
+    :>json string lifetime: Event lifetime in :rfc:`iCal format <5545>`
     :>json string org: :ref:`Organizer <partner>` ID
     :>json boolean removed: Deletion flag
     :>json string status: Event status
