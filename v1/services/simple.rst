@@ -66,6 +66,16 @@ Simple service for lazy integration
                 },
                 "id": "541c05c037abbd1af8b3398e",
                 "lifetime": "BEGIN:VEVENT\r\nDTSTART:20141001T170000Z\r\nDTEND:20141001T190000Z\r\nEND:VEVENT\r\n",
+                "media": {
+                    "logo": {
+                        "author": "535fb19bdca6a9d1638f2007",
+                        "content_type": "image/jpeg",
+                        "id": "545b686b37abbd08a96e50a5",
+                        "length": 72122,
+                        "md5hash": "0db79df4bbef2e847e31e46508f1d43e",
+                        "url": "https://s3-eu-west-1.amazonaws.com/media.ticketscloud/9a44bb963ae44db8a443d1f3c19ed39e.jpeg"
+                    }
+                },
                 "org": {
                     "contact": {},
                     "desc": null,
@@ -247,6 +257,16 @@ Simple service for lazy integration
             },
             "id": "541c05c037abbd1af8b3398e",
             "lifetime": "BEGIN:VEVENT\r\nDTSTART:20141001T170000Z\r\nDTEND:20141001T190000Z\r\nEND:VEVENT\r\n",
+            "media": {
+                "logo": {
+                    "author": "535fb19bdca6a9d1638f2007",
+                    "content_type": "image/jpeg",
+                    "id": "545b686b37abbd08a96e50a5",
+                    "length": 72122,
+                    "md5hash": "0db79df4bbef2e847e31e46508f1d43e",
+                    "url": "https://s3-eu-west-1.amazonaws.com/media.ticketscloud/9a44bb963ae44db8a443d1f3c19ed39e.jpeg"
+                }
+            },
             "org": {
                 "contact": {},
                 "desc": null,
