@@ -20,6 +20,7 @@ Simple service for lazy integration
     :>jsonarr string id: :ref:`Event <event>` id
     :>jsonarr string lifetime: :ref:`Event <event>` duration in :rfc:`iCal format <5545>`
     :>jsonarr object org: :ref:`Organizer <partner>` information object
+    :>jsonarr array media: :ref:`Media files <att>`
     :>jsonarr array sets: List of available :ref:`sets <set>` including:
 
         - **amount** (*number*): Amount of available :ref:`tickets <ticket>` in set
@@ -200,6 +201,7 @@ Simple service for lazy integration
     :>json string id: :ref:`Event <event>` id
     :>json string lifetime: :ref:`Event <event>` duration in :rfc:`iCal format <5545>`
     :>json object org: :ref:`Organizer <partner>` information object
+    :>json array media: :ref:`Media files <att>`
     :>json array sets: List of available :ref:`sets <set>` including:
 
         - **amount** (*number*): Amount of available :ref:`tickets <ticket>` in set
