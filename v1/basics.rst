@@ -102,11 +102,11 @@ Request Headers
 Response Status Codes
 ---------------------
 
-With the interface to CouchDB working through HTTP, error codes and
+With the interface to TicketsCloud working through HTTP, error codes and
 statuses are reported using a combination of the HTTP status code
 number, and corresponding data in the body of the response data.
 
-A list of the error codes returned by CouchDB, and generic descriptions
+A list of the error codes returned by TicketsCloud, and generic descriptions
 of the related errors are provided below. The meaning of different
 status codes for specific request types are provided in the
 corresponding API call reference.
@@ -180,8 +180,8 @@ Response Headers
 
 Response headers are returned by the server when sending back content
 and include a number of different header fields, many of which are
-standard HTTP response header and have no significance to CouchDB
-operation. The list of response headers important to CouchDB are listed
+standard HTTP response header and have no significance to TicketsCloud
+operation. The list of response headers important to TicketsCloud are listed
 below.
 
 - :header:`Content-Length`
@@ -199,7 +199,7 @@ below.
 
     The cache control HTTP response header provides a suggestion for
     client caching mechanisms on how to treat the returned information.
-    CouchDB typically returns the ``must-revalidate``, which indicates
+    TicketsCloud typically returns the ``must-revalidate``, which indicates
     that the information should be revalidated if possible. This is used
     to ensure that the dynamic nature of the content is correctly
     updated.
