@@ -28,6 +28,7 @@ Order
     :>json string vendor: :ref:`vendor <partner>` ID
     :>json string status: Order status
     :>json array tickets: List of ordered `tickets` ids
+    :>json array promocodes: List of `promocode` as objects
     :>json datetime updated_at: Partner update timestamp
     :>json value: Value
     :code 200: Ok
@@ -84,6 +85,7 @@ Order
     :<json string status: Order status
     :<json array tickets: List of ordered `tickets` ids
     :<json bool all_or_nothing: reserve all tickets or not resetve nothing
+    :<json array promocodes: List of `promocode` as strings (field `code`)
     :>header Content-Type: :mimetype:`application/json`
     :>header Transfer-Encoding: ``chunked``
     :>json object customer: Customer information
@@ -97,6 +99,7 @@ Order
     :>json string status: Order status
     :>json array tickets: List of ordered `tickets` ids
     :>json datetime updated_at: Partner update timestamp
+    :>json array promocodes: List of `promocode` as objects
     :>json value: Value
     :code 200: Ok
     :code 400: Invalid request parameters
@@ -204,6 +207,7 @@ Orders
     :>jsonarr string status: Order status
     :>jsonarr array tickets: List of ordered `tickets` ids
     :>jsonarr datetime updated_at: Partner update timestamp
+    :>json array promocodes: List of `promocode` as objects
     :>jsonarr value: Value
     :code 200: Ok
     :code 400: Invalid request parameters
