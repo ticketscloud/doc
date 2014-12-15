@@ -25,6 +25,7 @@ Deal
     :>json datetime created_at: Deal creation timestamp
     :>json string event: :ref:`event` ID
     :>json string id: :ref:`deal` ID
+    :>json string message: Short message with deal
     :>json string obj: :ref:`partner` ID
     :>json boolean reversed_deal: Deal made from `subj` to `obj`
     :>json string status: Deal status
@@ -52,6 +53,7 @@ Deal
     :>json datetime created_at: Deal creation timestamp
     :>json string event: :ref:`event` ID
     :>json string id: :ref:`deal` ID
+    :>json string message: Short message with deal
     :>json string obj: :ref:`partner` ID
     :>json boolean reversed_deal: Deal made from `subj` to `obj`
     :>json string status: Deal status
@@ -81,6 +83,7 @@ Deals
     :>jsonarr datetime created_at: Deal creation timestamp
     :>jsonarr string event: :ref:`event` ID
     :>jsonarr string id: :ref:`deal` ID
+    :>jsonarr string message: Short message with deal
     :>jsonarr string obj: :ref:`partner` ID
     :>jsonarr boolean reversed_deal: Deal made from `subj` to `obj`
     :>jsonarr string status: Deal status
@@ -136,6 +139,7 @@ Deals
     :param string idevent: :ref:`event` ID
     :query string fields-schema: :ref:`api/dsl`
     :<json string event: :ref:`event` ID
+    :<json string message: Short message with deal
     :<json string subj: :ref:`partner` ID
     :<json object term: Deal :ref:`terms`
     :>header Content-Type: :mimetype:`application/json`
@@ -143,6 +147,7 @@ Deals
     :>jsonarr datetime created_at: Deal creation timestamp
     :>json string event: :ref:`event` ID
     :>json string id: :ref:`deal` ID
+    :>json string message: Short message with deal
     :>json string obj: :ref:`partner` ID
     :>json boolean reversed_deal: Deal made from `subj` to `obj`
     :>json string status: Deal status
