@@ -10,9 +10,27 @@ Simple service for lazy integration
 
     :<header Accept: :mimetype:`application/json`
     :<header Authorization: :ref:`API key <apikey>`
-    :query updated_at__gt: Returns events which were updated since the specified
-        date. The date should be defined in `ISO-8601
-        <https://en.wikipedia.org/wiki/ISO_8601>`_ format.
+
+    :query ids: Returns only events with ids
+    :query org: Filter by org
+    :query tags: comma separated list of tags
+    :query lifetime__range: two comma separated datetimes
+    :query price__range: two comma separated numbers
+    :query created_at__since: Returns events which were created since the specified date.
+    :query updated_at__since: Returns events which were updated since the specified date.
+    :query country: filter by coutntry
+    :query city: filter by city
+    :query venue: filter by venue
+    :query page: page number
+    :query page_size: number events on page
+
+    :query sort: Sort events.
+        One of "start", "end", "price", "-start", "-end" or "-price".
+
+        - **start** sort by events start
+        - **end** sort by events start
+        - **price** sort by minimal price
+
     :>header Content-Type: :mimetype:`application/json`
     :>header Transfer-Encoding: ``chunked``
 
