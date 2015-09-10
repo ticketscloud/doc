@@ -15,29 +15,62 @@ Simple service for lazy integration
         <https://en.wikipedia.org/wiki/ISO_8601>`_ format.
     :>header Content-Type: :mimetype:`application/json`
     :>header Transfer-Encoding: ``chunked``
-    :>jsonarr datetime created_at: :ref:`Event <event>` creation timestamp
-    :>jsonarr object deal: :ref:`Deal <deal>` terms
+
     :>jsonarr string id: :ref:`Event <event>` id
+    :>jsonarr string age_rating:
+    :>jsonarr datetime created_at: :ref:`Event <event>` creation timestamp
+    :>jsonarr object deal: :ref:`Deal <deal>` terms (only for agents)
+
+        - **extra**
+        - **pfc**
+
     :>jsonarr string lifetime: :ref:`Event <event>` duration in :rfc:`iCal format <5545>`
-    :>jsonarr object org: :ref:`Organizer <partner>` information object
+    :>jsonarr object map:
     :>jsonarr array media: :ref:`Media files <att>`
+    :>jsonarr object org: :ref:`Organizer <partner>` information object
+
+        - **id** (*string*)
+        - **contact** (*object*)
+        - **desc** (*string*)
+        - **media** (*object*)
+        - **name** (*string*)
+        - **tags** (*list* of *string*)
+
     :>jsonarr array sets: List of available :ref:`sets <set>` including:
 
-        - **amount** (*number*): Amount of available :ref:`tickets <ticket>` in set
         - **id** (*string*): :ref:`Set <set>` id
+        - **amount** (*number*): Amount :ref:`tickets <ticket>` in set
+        - **amount_vacant** (*number*): Amount of available :ref:`tickets <ticket>` in set
         - **name** (*string*): Description
         - **price** (*string*): Cost of single ticket including the terms from the current rule
         - **price_extra** (*string*): Extra price on top of base one
         - **price_org** (*string*): Base price for tickets provided by a organizer
         - **rules** (*array* of *objects*): List of rules applicable to this set. The current one is defined by the flag ``current: true``
+        - **sector** (*string*): sector if map exist
 
+    :>jsonarr string status: event status
     :>jsonarr array tags: List of :ref:`event <event>` tags
+    :>jsonarr number tickets_amount: amount tickets
+    :>jsonarr number tickets_amount_vacant: amount vacant tickets
     :>jsonarr object title: :ref:`Event <event>` name and description
+
+        - **desc** (*string*)
+        - **text** (*string*)
+
     :>jsonarr datetime updated_at: :ref:`Event <event>` last update timestamp
     :>jsonarr object venue: :ref:`Venue <venue>` information object
+
+        - **id** (*string*)
+        - **address** (*string*)
+        - **city** (*object*) :ref:`City <ticket>` object
+        - **country** (*object*) :ref:`Country <ticket>` object
+        - **desc** (*string*)
+        - **name** (*string*)
+        - **point** (*object*) GeoJSON Point
+
+
     :code 200: Ok
     :code 400: Invalid request parameters
-    :code 401: Authentication required
     :code 403: Operation not allowed
 
     **Request**
@@ -206,26 +239,59 @@ Simple service for lazy integration
         <https://en.wikipedia.org/wiki/ISO_8601>`_ format.
     :>header Content-Type: :mimetype:`application/json`
     :>header Transfer-Encoding: ``chunked``
-    :>json datetime created_at: :ref:`Event <event>` creation timestamp
-    :>json object deal: :ref:`Deal <deal>` terms
-    :>json string id: :ref:`Event <event>` id
-    :>json string lifetime: :ref:`Event <event>` duration in :rfc:`iCal format <5545>`
-    :>json object org: :ref:`Organizer <partner>` information object
-    :>json array media: :ref:`Media files <att>`
-    :>json array sets: List of available :ref:`sets <set>` including:
 
-        - **amount** (*number*): Amount of available :ref:`tickets <ticket>` in set
+    :>jsonarr string id: :ref:`Event <event>` id
+    :>jsonarr string age_rating:
+    :>jsonarr datetime created_at: :ref:`Event <event>` creation timestamp
+    :>jsonarr object deal: :ref:`Deal <deal>` terms (only for agents)
+
+        - **extra**
+        - **pfc**
+
+    :>jsonarr string lifetime: :ref:`Event <event>` duration in :rfc:`iCal format <5545>`
+    :>jsonarr object map:
+    :>jsonarr array media: :ref:`Media files <att>`
+    :>jsonarr object org: :ref:`Organizer <partner>` information object
+
+        - **id** (*string*)
+        - **contact** (*object*)
+        - **desc** (*string*)
+        - **media** (*object*)
+        - **name** (*string*)
+        - **tags** (*list* of *string*)
+
+    :>jsonarr array sets: List of available :ref:`sets <set>` including:
+
         - **id** (*string*): :ref:`Set <set>` id
+        - **amount** (*number*): Amount :ref:`tickets <ticket>` in set
+        - **amount_vacant** (*number*): Amount of available :ref:`tickets <ticket>` in set
         - **name** (*string*): Description
         - **price** (*string*): Cost of single ticket including the terms from the current rule
         - **price_extra** (*string*): Extra price on top of base one
         - **price_org** (*string*): Base price for tickets provided by a organizer
         - **rules** (*array* of *objects*): List of rules applicable to this set. The current one is defined by the flag ``current: true``
+        - **sector** (*string*): sector if map exist
 
-    :>json array tags: List of :ref:`event <event>` tags
-    :>json object title: :ref:`Event <event>` name and description
-    :>json datetime updated_at: :ref:`Event <event>` last update timestamp
-    :>json object venue: :ref:`Venue <venue>` information object
+    :>jsonarr string status: event status
+    :>jsonarr array tags: List of :ref:`event <event>` tags
+    :>jsonarr number tickets_amount: amount tickets
+    :>jsonarr number tickets_amount_vacant: amount vacant tickets
+    :>jsonarr object title: :ref:`Event <event>` name and description
+
+        - **desc** (*string*)
+        - **text** (*string*)
+
+    :>jsonarr datetime updated_at: :ref:`Event <event>` last update timestamp
+    :>jsonarr object venue: :ref:`Venue <venue>` information object
+
+        - **id** (*string*)
+        - **address** (*string*)
+        - **city** (*object*) :ref:`City <ticket>` object
+        - **country** (*object*) :ref:`Country <ticket>` object
+        - **desc** (*string*)
+        - **name** (*string*)
+        - **point** (*object*) GeoJSON Point
+
     :code 200: Ok
     :code 400: Invalid request parameters
     :code 401: Authentication required
@@ -250,23 +316,13 @@ Simple service for lazy integration
         Transfer-Encoding: chunked
 
         {
-            "created_at": "2014-09-19T10:30:24.388000+00:00",
+            "created_at": "2014-09-19T11:10:31.922000+00:00",
             "deal": {
                 "extra": "10.0%",
                 "pfc": false
             },
-            "id": "541c05c037abbd1af8b3398e",
+            "id": "541c0f2737abbd1c64b61b48",
             "lifetime": "BEGIN:VEVENT\r\nDTSTART:20141001T170000Z\r\nDTEND:20141001T190000Z\r\nEND:VEVENT\r\n",
-            "media": {
-                "logo": {
-                    "author": "535fb19bdca6a9d1638f2007",
-                    "content_type": "image/jpeg",
-                    "id": "545b686b37abbd08a96e50a5",
-                    "length": 72122,
-                    "md5hash": "0db79df4bbef2e847e31e46508f1d43e",
-                    "url": "https://s3-eu-west-1.amazonaws.com/media.ticketscloud/9a44bb963ae44db8a443d1f3c19ed39e.jpeg"
-                }
-            },
             "org": {
                 "contact": {},
                 "desc": null,
@@ -278,7 +334,7 @@ Simple service for lazy integration
                 {
                     "amount": 100,
                     "amount_vacant": 13,
-                    "id": "541c05c037abbd1af8b33992",
+                    "id": "541c0f2737abbd1c64b61b4c",
                     "name": "foo",
                     "price": "1105.5",
                     "price_extra": "100.5",
@@ -287,7 +343,7 @@ Simple service for lazy integration
                         {
                             "cal": "BEGIN:VEVENT\r\nDTSTART:20140901T170000Z\r\nDTEND:20141001T190000Z\r\nEND:VEVENT\r\n",
                             "current": true,
-                            "id": "541c05c037abbd1af8b33990",
+                            "id": "541c0f2737abbd1c64b61b4a",
                             "price": "1105.5",
                             "price_extra": "100.5",
                             "price_org": "1005.00"
@@ -303,7 +359,7 @@ Simple service for lazy integration
                 "desc": "Возвращение музыканта в хорошем расположении духа и с новой программой",
                 "text": "Найк Борзов"
             },
-            "updated_at": "2014-09-19T10:30:24.793000+00:00",
+            "updated_at": "2014-09-19T11:10:32.235000+00:00",
             "venue": {
                 "address": "Кутузовский просп., 25",
                 "city": {},
