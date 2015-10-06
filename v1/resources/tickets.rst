@@ -21,6 +21,7 @@ Ticket
     :query string fields-schema: :ref:`api/dsl`
     :>header Content-Type: :mimetype:`application/json`
     :>header Transfer-Encoding: ``chunked``
+
     :>json string barcode: Barcode (Code-128)
     :>json datetime created_at: Ticket creation timestamp
     :>json string id: :ref:`ticket` ID
@@ -30,51 +31,13 @@ Ticket
     :>json string set: :ref:`set` ID
     :>json string status: Ticket status
     :>json datetime updated_at: Ticket update timestamp
-    :code 200: Ok
-    :code 400: Invalid request parameters
-    :code 401: Authentication required
-    :code 403: Operation not allowed
+    :>json object seat: Information for seat
 
+        - **map** (*ObjectId*) Map id
+        - **sector** (*ObjectId*) Sector id
+        - **row** (*int*) Row number
+        - **number** (*int*) Seat number
 
-.. http:patch:: /v1/resources/events/{idevent}/sets/{idset}/tickets/{idticket}
-    :synopsis: Updates ticket information
-
-    Updates ticket information.
-
-    :<header Accept: :mimetype:`application/json`
-    :<header Authorization: :ref:`API key <apikey>`
-    :param string idevent: :ref:`event` ID
-    :param string idset: :ref:`set` ID
-    :param string idticket: :ref:`ticket` ID
-    :query string fields-schema: :ref:`api/dsl`
-    :<json string status: Ticket status
-    :>header Content-Type: :mimetype:`application/json`
-    :>header Transfer-Encoding: ``chunked``
-    :>json string barcode: Barcode (Code-128)
-    :>json datetime created_at: Ticket creation timestamp
-    :>json string id: :ref:`ticket` ID
-    :>json number number: Number
-    :>json boolean removed: Deletion flag
-    :>json string serial: Serial
-    :>json string set: :ref:`set` ID
-    :>json string status: Ticket status
-    :>json datetime updated_at: Ticket update timestamp
-    :code 200: Ok
-    :code 400: Invalid request parameters
-    :code 401: Authentication required
-    :code 403: Operation not allowed
-
-
-.. http:delete:: /v1/resources/events/{idevent}/sets/{idset}/tickets/{idticket}
-    :synopsis: Deletes a ticket
-
-    Deletes a ticket.
-
-    :<header Accept: :mimetype:`application/json`
-    :<header Authorization: :ref:`API key <apikey>`
-    :param string idevent: :ref:`event` ID
-    :param string idset: :ref:`set` ID
-    :param string idticket: :ref:`ticket` ID
     :code 200: Ok
     :code 400: Invalid request parameters
     :code 401: Authentication required
@@ -86,7 +49,7 @@ Ticket
 Tickets
 =======
 
-.. http:get:: /v1/resources/tickets
+.. http:get:: /v1/resources/events/{idevent}/tickets
     :synopsis: Returns list of existed tickets
 
     :<header Accept: :mimetype:`application/json`
@@ -97,37 +60,7 @@ Tickets
     :query string fields-schema: :ref:`api/dsl`
     :>header Content-Type: :mimetype:`application/json`
     :>header Transfer-Encoding: ``chunked``
-    :>jsonarr string barcode: Barcode (Code-128)
-    :>jsonarr datetime created_at: Ticket creation timestamp
-    :>jsonarr string id: :ref:`ticket` ID
-    :>jsonarr number number: Number
-    :>jsonarr boolean removed: Deletion flag
-    :>jsonarr string serial: Serial
-    :>jsonarr string set: :ref:`set` ID
-    :>jsonarr string status: Ticket status
-    :>jsonarr datetime updated_at: Ticket update timestamp
-    :code 200: Ok
-    :code 400: Invalid request parameters
-    :code 401: Authentication required
-    :code 403: Operation not allowed
 
-
-.. http:post:: /v1/resources/tickets
-    :synopsis: Creates a new ticket
-
-    Creates a new ticket.
-
-    :<header Accept: :mimetype:`application/json`
-    :<header Authorization: :ref:`API key <apikey>`
-    :param string idevent: :ref:`event` ID
-    :param string idset: :ref:`set` ID
-    :param string idticket: :ref:`ticket` ID
-    :query string fields-schema: :ref:`api/dsl`
-    :>json number number: Number
-    :>json string serial: Serial
-    :>json string status: Ticket status
-    :>header Content-Type: :mimetype:`application/json`
-    :>header Transfer-Encoding: ``chunked``
     :>json string barcode: Barcode (Code-128)
     :>json datetime created_at: Ticket creation timestamp
     :>json string id: :ref:`ticket` ID
@@ -137,9 +70,15 @@ Tickets
     :>json string set: :ref:`set` ID
     :>json string status: Ticket status
     :>json datetime updated_at: Ticket update timestamp
+    :>json object seat: Information for seat
+
+        - **map** (*ObjectId*) Map id
+        - **sector** (*ObjectId*) Sector id
+        - **row** (*int*) Row number
+        - **number** (*int*) Seat number
+
     :code 200: Ok
     :code 400: Invalid request parameters
-    :code 401: Authentication required
     :code 403: Operation not allowed
 
 
@@ -161,8 +100,13 @@ Event's Tickets
     :>json string status: Ticket status
     :>json string set: :ref:`set` ID
     :>json datetime reserved_till: Ticket reserved till timestamp
-    :>json object seat: information for seat
+    :>json object seat: Information for seat
+
+        - **map** (*ObjectId*) Map id
+        - **sector** (*ObjectId*) Sector id
+        - **row** (*int*) Row number
+        - **number** (*int*) Seat number
+
     :code 200: Ok
     :code 400: Invalid request parameters
-    :code 401: Authentication required
     :code 403: Operation not allowed

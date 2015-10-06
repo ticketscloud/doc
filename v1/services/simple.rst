@@ -57,6 +57,7 @@ Simple service for lazy integration
     :>jsonarr array sets: List of available :ref:`sets <set>` including:
 
         - **id** (*string*): :ref:`Set <set>` id
+        - **seats** (*map*): Seats in this set
         - **amount** (*number*): Amount :ref:`tickets <ticket>` in set
         - **amount_vacant** (*number*): Amount of available :ref:`tickets <ticket>` in set
         - **name** (*string*): Description
