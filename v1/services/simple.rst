@@ -39,6 +39,8 @@ Simple service for lazy integration
     :>jsonarr datetime created_at: :ref:`Event <event>` creation timestamp
     :>jsonarr object deal: :ref:`Deal <deal>` terms (only for agents)
 
+        - **org**
+        - **agent**
         - **extra**
         - **pfc**
 
@@ -113,6 +115,8 @@ Simple service for lazy integration
             {
                 "created_at": "2014-09-19T10:30:24.388000+00:00",
                 "deal": {
+                    "org": "93.0%",
+                    "agent": "7.0%",
                     "extra": "10.0%",
                     "pfc": false
                 },
@@ -184,6 +188,8 @@ Simple service for lazy integration
             {
                 "created_at": "2014-09-19T11:10:31.922000+00:00",
                 "deal": {
+                    "org": "93.0%",
+                    "agent": "7.0%",
                     "extra": "10.0%",
                     "pfc": false
                 },
@@ -264,6 +270,8 @@ Simple service for lazy integration
     :>jsonarr datetime created_at: :ref:`Event <event>` creation timestamp
     :>jsonarr object deal: :ref:`Deal <deal>` terms (only for agents)
 
+        - **org**
+        - **agent**
         - **extra**
         - **pfc**
 
@@ -337,6 +345,8 @@ Simple service for lazy integration
         {
             "created_at": "2014-09-19T11:10:31.922000+00:00",
             "deal": {
+                "org": "93.0%",
+                "agent": "7.0%",
                 "extra": "10.0%",
                 "pfc": false
             },
