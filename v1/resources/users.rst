@@ -12,13 +12,13 @@ Users are represents the humans which works with TicketsCloud API: each has
 own credentials and association. Users can only update their information,
 create related :ref:`partners <partner>` and their :ref:`keys <apikey>`.
 
-.. http:get:: /v1/resources/users/{iduser}
+.. http:get:: /v1/resources/users/{user_id}
     :synopsis: Returns user information
 
     Returns information about user by the specified ID.
 
     :<header Accept: :mimetype:`application/json`
-    :param string iduser: User ID
+    :param string user_id: User ID
     :query string fields-schema: :ref:`api/dsl`
     :>header Content-Type: :mimetype:`application/json`
     :>header Transfer-Encoding: ``chunked``
@@ -64,13 +64,13 @@ create related :ref:`partners <partner>` and their :ref:`keys <apikey>`.
         }
 
 
-.. http:patch:: /v1/resources/users/{iduser}
+.. http:patch:: /v1/resources/users/{user_id}
     :synopsis: Updates user information
 
     Updates user information.
 
     :<header Accept: :mimetype:`application/json`
-    :param string iduser: User ID
+    :param string user_id: User ID
     :query string fields-schema: :ref:`api/dsl`
     :<json string email: User email address
     :<json string first_name: User first name
@@ -137,15 +137,19 @@ Collection of :ref:`user` objects.
 
     :<header Accept: :mimetype:`application/json`
     :query string fields-schema: :ref:`api/dsl`
-    :query string ids: Comma-separated ids to filter by
-    :query boolean removed: Include deleted objects when ``true``
+    :query string suggest: filter user on suggest
+    :query string order_event: event id
+    :query string order_status: order status filter (require `order_event`)
+    :query int page: page number
+    :query int page-size: number items on page
+    :query str sort: one of `email`, `-email`, `suggest`, `-suggest`
     :>header Content-Type: :mimetype:`application/json`
     :>header Transfer-Encoding: ``chunked``
+    :>jsonarr string id: User unique ID
     :>jsonarr datetime created_at: User creation timestamp
     :>jsonarr string email: User email address
     :>jsonarr string first_name: User first name
-    :>jsonarr string id: User unique ID
-    :>jsonarr last_name: User last name
+    :>jsonarr string last_name: User last name
     :>jsonarr array partners: List of the Partners which users may operate with
     :>jsonarr array tags: List of the  associated tags
     :>jsonarr datetime updated_at: User update timestamp
@@ -268,3 +272,17 @@ Collection of :ref:`user` objects.
             "tags": [],
             "updated_at": "2014-08-06T14:59:20.323853+00:00"
         }
+
+
+.. http:get:: /v1/resources/users/:id/orders
+    :synopsis: Get orders or specified user
+
+    :<header Accept: :mimetype:`application/json`
+    :<header Content-Type: :mimetype:`application/json`
+    :query string fields-schema: :ref:`api/dsl`
+    :query string event: event id
+    :query string status: filter on order status
+    :code 200: Ok
+    :code 400: Invalid request parameters
+
+    Return list of :ref:`orders objects <order>`.
