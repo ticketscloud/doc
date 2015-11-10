@@ -30,6 +30,18 @@ create related :ref:`partners <partner>` and their :ref:`keys <apikey>`.
     :>json array partners: List of the Partners which users may operate with
     :>json array tags: List of the  associated tags
     :>json datetime updated_at: User update timestamp
+    :>json object crm: CRM cpecified info:
+
+        - **values** orders values info:
+
+              * **avg**
+              * **sum**
+
+        - **counters** some counters:
+
+            * **orders**
+            * **tickets**
+
     :code 200: Ok
     :code 400: Invalid request parameters
     :code 401: Authentication required
@@ -60,7 +72,17 @@ create related :ref:`partners <partner>` and their :ref:`keys <apikey>`.
             "last_name": null,
             "partners": [],
             "tags": [],
-            "updated_at": "2014-08-06T14:55:13.601000+00:00"
+            "updated_at": "2014-08-06T14:55:13.601000+00:00",
+            "crm": {
+                "values": {
+                    "avg": "1000.00",
+                    "sum": "2000.00"
+                },
+                "counters": {
+                    "orders": 2,
+                    "tickets": 4
+                }
+            }
         }
 
 
@@ -131,9 +153,9 @@ Users
 Collection of :ref:`user` objects.
 
 .. http:get:: /v1/resources/users
-    :synopsis: Returns list of existed users
+    :synopsis: Returns list of users
 
-    Returns list of existed :ref:`users <user>`.
+    Returns list of :ref:`users <user>`.
 
     :<header Accept: :mimetype:`application/json`
     :query string fields-schema: :ref:`api/dsl`
@@ -145,6 +167,7 @@ Collection of :ref:`user` objects.
     :query str sort: one of `email`, `-email`, `suggest`, `-suggest`
     :>header Content-Type: :mimetype:`application/json`
     :>header Transfer-Encoding: ``chunked``
+    :>header TOTAL: total found users (for pagination)
     :>jsonarr string id: User unique ID
     :>jsonarr datetime created_at: User creation timestamp
     :>jsonarr string email: User email address
@@ -153,6 +176,18 @@ Collection of :ref:`user` objects.
     :>jsonarr array partners: List of the Partners which users may operate with
     :>jsonarr array tags: List of the  associated tags
     :>jsonarr datetime updated_at: User update timestamp
+    :>json object crm: CRM cpecified info:
+
+        - **values** orders values info:
+
+              * **avg**
+              * **sum**
+
+        - **counters** some counters:
+
+            * **orders**
+            * **tickets**
+
     :code 200: Ok
     :code 400: Invalid request parameters
     :code 401: Authentication required
@@ -185,6 +220,16 @@ Collection of :ref:`user` objects.
                 "partners": [],
                 "tags": [],
                 "updated_at": "2014-08-06T14:55:13.601000+00:00"
+                "crm": {
+                    "values": {
+                        "avg": "1000.00",
+                        "sum": "2000.00"
+                    },
+                    "counters": {
+                        "orders": 2,
+                        "tickets": 4
+                    }
+                }
             },
             {
                 "created_at": "2014-08-06T14:56:46.465000+00:00",
@@ -195,26 +240,16 @@ Collection of :ref:`user` objects.
                 "partners": [],
                 "tags": [],
                 "updated_at": "2014-08-06T14:56:46.465000+00:00"
-            },
-            {
-                "created_at": "2014-08-06T14:57:13.577000+00:00",
-                "email": "user@domain.net",
-                "first_name": null,
-                "id": "53e2424937abbd587e16ef3e",
-                "last_name": null,
-                "partners": [],
-                "tags": [],
-                "updated_at": "2014-08-06T14:57:13.577000+00:00"
-            },
-            {
-                "created_at": "2014-08-06T14:58:49.489000+00:00",
-                "email": "user@domain.org",
-                "first_name": null,
-                "id": "53e242a937abbd588116ef40",
-                "last_name": null,
-                "partners": [],
-                "tags": [],
-                "updated_at": "2014-08-06T14:58:49.489000+00:00"
+                "crm": {
+                    "values": {
+                        "avg": "1000.00",
+                        "sum": "2000.00"
+                    },
+                    "counters": {
+                        "orders": 2,
+                        "tickets": 4
+                    }
+                }
             }
         ]
 
