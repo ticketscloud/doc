@@ -47,7 +47,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'TicketsCloud'
-copyright = '2014, TicketsCloud'
+copyright = '2014-2016, TicketsCloud'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the

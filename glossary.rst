@@ -1,43 +1,39 @@
 
-Glossary
-========
+Глоссарий
+=========
 
 .. glossary::
 
-    API Key
-        A special token used to authenticate :term:`partner` for API usage.
+    TicketsCloud
+        Платформа TicketsCloud.
 
-    Customer
-        A person who buys :term:`tickets <ticket>`.
+    API-ключ
+        Ключ, выданный менеджером :term:`TicketsCloud` для авторизации.
 
-    Deal
-        A contract made between :term:`distributor` and :term:`organizer` that
-        allows the first to sell tickets for the certain events.
+    Билет
+        Раздел "билеты".
 
-    Distributor
-        A :term:`partner` who sells tickets for :term:`events <event>`.
+    Билетная категория
+        TicketSet
 
-    Event
-        Some organized event: lecture, concert, performance, show, party etc.
+    Заказ
+        Сущность, отобращающая покупку пользователем :term:`билетов <билет>` → :ref:`работа с заказом <simple/orders>`
 
-    Order
-        A financial document that contains bought :term:`tickets <ticket>`,
-        their price etc.
+    Сделка
+        Совокупность условий по продаже :term:`билетов <билет>` на :term:`мероприятие`.
+        См. раздел "сделки".
 
-    Organizer
-        A :term:`partner` who organizes :term:`events <event>`.
+    Мероприятие
+        Раздел "мероприятия".
 
-    Ticket
-        The matter of everything. That's why we here.
+    Организатор
+        :term:`Партнёр`, организатор :term:`мероприятия <мероприятие>`.
 
-    Ticket Set
-        A group of :term:`tickets <ticket>`.
+    Партнёр
+        Основное действующее лицо в системе.
 
-    Partner
-        A company which works with TicketsCloud. Could be :term:`distributor`
-        or :term:`organizer`.
+    Платёжная система
+        Информация в :term:`заказе <заказ>` о способе оплаты → :ref:`платёжные системы <simple/ps>`
 
-    User
-        A person who represents some :term:`partner`.
-
-
+    Расространитель
+        :term:`Партнёр`, распространитель :term:`билетов <билет>`.
