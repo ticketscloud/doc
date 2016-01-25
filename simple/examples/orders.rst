@@ -10,11 +10,10 @@
 .. sourcecode:: http
 
     POST /v1/resources/orders HTTP/1.1
+    Host: api.ticketscloud.org
     Accept: application/json
     Authorization:  key 047bdb8bcee44d3693371920aaf9135c
-    Connection: keep-alive
     Content-Type: application/json
-    Host: dev.ticketscloud.org
 
     {
         "event": "56a6253df06c5a059a93802e", 
@@ -28,7 +27,6 @@
 .. sourcecode:: http
 
     HTTP/1.1 201 Created
-    Connection: keep-alive
     Content-Type: application/json; charset=UTF-8
     X-Partner: 56810047f06c5a6ac62f4e1d
 
@@ -81,11 +79,10 @@
 .. sourcecode:: http
 
     PATCH /v1/resources/orders/56a6a93ef06c5a21c3938059 HTTP/1.1
+    Host: api.ticketscloud.org
     Accept: application/json
     Authorization:  key 047bdb8bcee44d3693371920aaf9135c
-    Connection: keep-alive
     Content-Type: application/json
-    Host: dev.ticketscloud.org
 
     {
         "random": {
@@ -98,7 +95,6 @@
 .. sourcecode:: http
 
     HTTP/1.1 200 OK
-    Connection: keep-alive
     Content-Type: application/json; charset=UTF-8
     X-Partner: 56810047f06c5a6ac62f4e1d
 
