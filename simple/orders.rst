@@ -116,7 +116,7 @@ expired
 
 Нельзя использовать в одном запросе с ``random``.
 
-* :ref:`Пример запросов <ex/orders>`. 
+* :ref:`Пример запросов <ex/orders_tickets>`. 
 
 
 .. _simple/orders/reserve/random:
@@ -137,8 +137,7 @@ expired
 
 Нельзя использовать в одном запросе с ``tickets``.
 
-.. EXAMPLE
-.. Важно показать и создание и изменение.
+* :ref:`Пример запросов <ex/orders_random>`.
 
 .. _simple/orders/all_or_nothing:
 
