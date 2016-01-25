@@ -16,7 +16,7 @@
     Content-Type: application/json
 
     {
-        "event": "56a6253df06c5a059a93802e", 
+        "event": "56a6253df06c5a059a93802e",
         "random": {
             "56a6254bf06c5a059b93800c": 1
         }
@@ -32,42 +32,42 @@
 
     {
         "id": "56a6a93ef06c5a21c3938059",
-        "created_at": "2016-01-25T23:01:18.612000+00:00", 
+        "created_at": "2016-01-25T23:01:18.612000+00:00",
         "customer": {
             "lang": "ru"
-        }, 
-        "deal": null, 
-        "event": "56a6253df06c5a059a93802e", 
-        "number": 497291896, 
-        "org": "56810047f06c5a6ac62f4e1d", 
+        },
+        "deal": null,
+        "event": "56a6253df06c5a059a93802e",
+        "number": 497291896,
+        "org": "56810047f06c5a6ac62f4e1d",
         "payment": {
-            "failure_url": null, 
-            "success_url": null, 
+            "failure_url": null,
+            "success_url": null,
             "system": null
-        }, 
-        "promocodes": [], 
-        "reserved_till": "2016-01-25T23:11:18.625000+00:00", 
+        },
+        "promocodes": [],
+        "reserved_till": "2016-01-25T23:11:18.625000+00:00",
         "rules": {
             "56a6254bf06c5a059b93800c": "56a6254bf06c5a059b93800b"
-        }, 
+        },
         "salespoint": {
             "blanks": {
-                "rejected": {}, 
+                "rejected": {},
                 "used": {}
             }
-        }, 
-        "status": "executed", 
+        },
+        "status": "executed",
         "tickets": [
             "56a6253df06c5a059a9380a0"
-        ], 
-        "updated_at": "2016-01-25T23:01:18.625000+00:00", 
-        "value": "100.00", 
-        "value_extra": "0.00", 
+        ],
+        "updated_at": "2016-01-25T23:01:18.625000+00:00",
+        "value": "100.00",
+        "value_extra": "0.00",
         "values": {
-            "extra": "0.00", 
-            "full": "100.00", 
+            "extra": "0.00",
+            "full": "100.00",
             "nominal": "100.00"
-        }, 
+        },
         "vendor": "56810047f06c5a6ac62f4e1d"
     }
 
@@ -100,42 +100,42 @@
 
     {
         "id": "56a6a93ef06c5a21c3938059",
-        "created_at": "2016-01-25T23:01:18.612000+00:00", 
+        "created_at": "2016-01-25T23:01:18.612000+00:00",
         "customer": {
             "lang": "ru"
-        }, 
-        "deal": null, 
-        "event": "56a6253df06c5a059a93802e",  
-        "number": 497291896, 
-        "org": "56810047f06c5a6ac62f4e1d", 
+        },
+        "deal": null,
+        "event": "56a6253df06c5a059a93802e",
+        "number": 497291896,
+        "org": "56810047f06c5a6ac62f4e1d",
         "payment": {
-            "failure_url": null, 
-            "success_url": null, 
+            "failure_url": null,
+            "success_url": null,
             "system": null
-        }, 
-        "promocodes": [], 
-        "reserved_till": "2016-01-25T23:11:18.625000+00:00", 
+        },
+        "promocodes": [],
+        "reserved_till": "2016-01-25T23:11:18.625000+00:00",
         "rules": {
             "56a6254bf06c5a059b93800c": "56a6254bf06c5a059b93800b"
-        }, 
+        },
         "salespoint": {
             "blanks": {
-                "rejected": {}, 
+                "rejected": {},
                 "used": {}
             }
-        }, 
-        "status": "executed", 
+        },
+        "status": "executed",
         "tickets": [
-            "56a6253df06c5a059a9380a4", 
+            "56a6253df06c5a059a9380a4",
             "56a6253df06c5a059a9380a0"
-        ], 
-        "updated_at": "2016-01-25T23:05:38.937000+00:00", 
-        "value": "200.00", 
-        "value_extra": "0.00", 
+        ],
+        "updated_at": "2016-01-25T23:05:38.937000+00:00",
+        "value": "200.00",
+        "value_extra": "0.00",
         "values": {
-            "extra": "0.00", 
-            "full": "200.00", 
+            "extra": "0.00",
+            "full": "200.00",
             "nominal": "200.00"
-        }, 
+        },
         "vendor": "56810047f06c5a6ac62f4e1d"
     }
