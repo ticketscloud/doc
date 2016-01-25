@@ -7,7 +7,7 @@
 
 **Request**:
 
-.. code:: html
+.. sourcecode:: http
 
     GET /v1/resources/events/56a6253df06c5a059a93802e/tickets HTTP/1.1
     Accept: application/json
@@ -16,9 +16,9 @@
     Content-Type: application/json
     Host: ticketscloud.org
            
-**Response**
+**Response**:
 
-.. code:: html
+.. sourcecode:: http
 
     HTTP/1.1 200 OK
     Connection: keep-alive
