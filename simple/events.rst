@@ -118,7 +118,12 @@ VEVENT
 Поле типа vevent, это строка в формате ``VEVENT`` из :rfc:`2445`.
 В настоящий момент поддерживается только два значения: ``DTSTART`` и ``DTEND``. Значения указываются только в `UTC <https://goo.gl/QGpQCU>`_
 
-Пример: ``"BEGIN:VEVENT\r\nDTSTART;VALUE=DATE-TIME:20160124T160000Z\r\nDTEND;VALUE=DATE-TIME:20160124T173000Z\r\nEND:VEVENT\r\n"``.
+Пример::
+
+    BEGIN:VEVENT\r\n
+    DTSTART;VALUE=DATE-TIME:20160124T160000Z\r\n
+    DTEND;VALUE=DATE-TIME:20160124T173000Z\r\n
+    END:VEVENT\r\n
 
 
 .. _simple/events/media:
