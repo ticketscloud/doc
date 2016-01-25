@@ -116,8 +116,8 @@ expired
 
 Нельзя использовать в одном запросе с ``random``.
 
-.. EXAMPLE
-.. Важно показать и создание и изменение.
+* :ref:`Пример запросов <ex/orders>`. 
+
 
 .. _simple/orders/reserve/random:
 
