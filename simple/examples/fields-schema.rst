@@ -11,71 +11,68 @@ fields-schema
 
 .. sourcecode:: http
 
-    GET https://ticketscloud.org/v1/resources/orders/56a62942f06c5a059b93800f
-    Authorization: key 047bdb8bcee44d3693371920aaf9135c
-    Accept: application/json
-    Content-Type: application/json
+   GET /v1/resources/orders/56a69feaf06c5a21c3938057 HTTP/1.1
+   Accept: application/json
+   Authorization:  key 047bdb8bcee44d3693371920aaf9135c
+   Connection: keep-alive
+   Content-Type: application/json
+   Host: ticketscloud.org
 
 **Response**:
 
 .. sourcecode:: http
 
+    HTTP/1.1 200 OK
+    Connection: keep-alive
+    Content-Type: application/json; charset=UTF-8
+    X-Partner: 56810047f06c5a6ac62f4e1d
+
     {
-      "id": "56a62942f06c5a059b93800f",
-      "customer": {
-        "lang": null,
-        "last_name": "Алексей",
-        "first_name": "Волков",
-        "user": "56a6296b41226dbf3b34617f",
-        "email": "volchek@alex.org",
-        "mobile": "89167683232"
-      },
-      "deal": null,
-      "status": "expired",
-      "values": {
-        "full": "100.00",
-        "nominal": "100.00",
-        "extra": "0.00"
-      },
-      "updated_at": "2016-01-25T14:26:12.721000+00:00",
-      "rules": {
-        "568a22b6f06c5a42985fb914": "56a61828f06c5a059b937fdc"
-      },
-      "salespoint": {
-        "blanks": {
-          "used": null,
-          "rejected": null
-        }
-      },
-      "created_at": "2016-01-25T13:55:14.220000+00:00",
-      "org": "56810047f06c5a6ac62f4e1d",
-      "vendor": "56810047f06c5a6ac62f4e1d",
-      "reserved_till": null,
-      "promocodes": [],
-      "value_extra": "0.00",
-      "payment": {
-        "redirect_url": "https://www.platron.ru/ps/test/start_payment.php?payment_id=23315790",
-        "success_url": "http://ticketscloud.org/?tcordersuccess=497291884",
-        "failure_url": "http://ticketscloud.org/",
-        "system": "545b544a5d645a463e779d53"
-      },
-      "tickets": [
-        "568a22b6f06c5a42e8847c55"
-      ],
-      "number": 497291884,
-      "event": "568a22b5f06c5a42975fb913",
-      "value": "100.00"
+        "id": "56a69feaf06c5a21c3938057",
+        "created_at": "2016-01-25T22:21:30.737000+00:00", 
+        "customer": {
+            "email": "volkov@alex.com", 
+            "first_name": "Алексей", 
+            "lang": null, 
+            "last_name": "Волков", 
+            "mobile": "89167683232", 
+            "user": "56a6a01841226dbf3b346180"
+        }, 
+        "deal": null, 
+        "event": "568a22b5f06c5a42975fb913", 
+        "number": 497291895, 
+        "org": "56810047f06c5a6ac62f4e1d", 
+        "payment": {
+            "failure_url": "http://ticketscloud.org/", 
+            "redirect_url": "https://www.platron.ru/ps/test/start_payment.php?payment_id=23324826", 
+            "success_url": "http://ticketscloud.org/?tcordersuccess=497291895", 
+            "system": "545b544a5d645a463e779d53"
+        }, 
+        "promocodes": [], 
+        "reserved_till": "2016-01-25T22:52:21.062000+00:00", 
+        "rules": {
+            "568a22b6f06c5a42985fb914": "56a61828f06c5a059b937fdc"
+        }, 
+        "salespoint": {
+            "blanks": {
+                "rejected": {}, 
+                "used": {}
+            }
+        }, 
+        "status": "in_progress", 
+        "tickets": [
+            "568a22b6f06c5a42e8847c55"
+        ], 
+        "updated_at": "2016-01-25T22:22:21.063000+00:00", 
+        "value": "100.00", 
+        "value_extra": "0.00", 
+        "values": {
+            "extra": "0.00", 
+            "full": "100.00", 
+            "nominal": "100.00"
+        }, 
+        "vendor": "56810047f06c5a6ac62f4e1d"
     }
-    // GET https://ticketscloud.org/v1/resources/orders/56a62942f06c5a059b93800f
-    // HTTP/1.1 200 OK
-    // Server: nginx/1.8.0
-    // Date: Mon, 25 Jan 2016 14:31:30 GMT
-    // Content-Type: application/json; charset=UTF-8
-    // Content-Length: 1104
-    // Connection: keep-alive
-    // X-Partner: 56810047f06c5a6ac62f4e1d
-    // Cache-Control: private, max-age=0, no-cache, no-store
-    // Request duration: 0.696011s
 
 
 Запрос со схемой, раскрывающий информацию о билетах в заказе и название мероприятия:
@@ -84,38 +81,35 @@ fields-schema
 
 .. sourcecode:: http
 
-   GET https://ticketscloud.org/v1/resources/orders/56a62942f06c5a059b93800f?fields-schema=id,tickets{id,serial,number,seat{row,number}},event{title{text}}
-   Authorization: key 047bdb8bcee44d3693371920aaf9135c
+   GET /v1/resources/orders/56a69feaf06c5a21c3938057?fields-schema=id,tickets%7Bid,serial,number,seat%7Brow,number%7D%7D,event%7Btitle%7Btext%7D%7D HTTP/1.1
    Accept: application/json
+   Authorization:  key 047bdb8bcee44d3693371920aaf9135c
+   Connection: keep-alive
    Content-Type: application/json
+   Host: ticketscloud.org
 
 **Response**:
 
 .. sourcecode:: http
 
+    HTTP/1.1 200 OK
+    Connection: keep-alive
+    Content-Type: application/json; charset=UTF-8
+    X-Partner: 56810047f06c5a6ac62f4e1d
+
     {
-      "id": "56a62942f06c5a059b93800f",
-      "tickets": [
-        {
-          "serial": "AEY",
-          "seat": null,
-          "number": 118398,
-          "id": "568a22b6f06c5a42e8847c55"
-        }
-      ],
-      "event": {
-        "title": {
-          "text": "test"
-        }
-      }
+        "id": "56a69feaf06c5a21c3938057",
+        "event": {
+            "title": {
+                "text": "test"
+            }
+        },  
+        "tickets": [
+            {
+                "id": "568a22b6f06c5a42e8847c55", 
+                "number": 118398, 
+                "seat": {}, 
+                "serial": "AEY"
+            }
+        ]
     }
-    // GET https://ticketscloud.org/v1/resources/orders/56a62942f06c5a059b93800f?fields-schema=id,tickets{id,serial,number,seat{row,number}},event{title{text}}
-    // HTTP/1.1 200 OK
-    // Server: nginx/1.8.0
-    // Date: Mon, 25 Jan 2016 14:39:11 GMT
-    // Content-Type: application/json; charset=UTF-8
-    // Content-Length: 168
-    // Connection: keep-alive
-    // X-Partner: 56810047f06c5a6ac62f4e1d
-    // Cache-Control: private, max-age=0, no-cache, no-store
-    // Request duration: 0.603163s
