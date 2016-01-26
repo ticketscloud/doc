@@ -194,7 +194,7 @@ expired
 
 .. EXAMPLE
 .. Показать провести заказ с api/BASE.
-.. Показать, как работать с платроном.
+* :ref:`Пример работы с платроном <ex/orders/platron>`.
 
 .. _simple/orders/change_status:
 
