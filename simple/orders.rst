@@ -211,8 +211,7 @@ expired
 и может быть ограничена.
 
 
-.. EXAMPLE
-.. Провести простейший заказ.
+* :ref:`Пример запросов <ex/orders/carry_out>`.
 
 .. _simple/orders/cancel:
 
