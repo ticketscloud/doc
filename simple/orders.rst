@@ -192,8 +192,7 @@ expired
 :failure_url: URL неудачной оплаты;
 :redirect_url: только для чтения, URL, куда клиент должен отправить пользователя, для совершения оплаты;
 
-.. EXAMPLE
-.. Показать провести заказ с api/BASE.
+* :ref:`Пример работы с заказом без платрона <ex/orders/manual>`
 * :ref:`Пример работы с платроном <ex/orders/platron>`.
 
 .. _simple/orders/change_status:
