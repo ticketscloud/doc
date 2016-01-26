@@ -10,18 +10,16 @@
 .. sourcecode:: http
 
     GET /v1/resources/events/56a6253df06c5a059a93802e/tickets HTTP/1.1
+    Host: api.ticketscloud.org
     Accept: application/json
     Authorization:  key 047bdb8bcee44d3693371920aaf9135c
-    Connection: keep-alive
     Content-Type: application/json
-    Host: ticketscloud.org
            
 **Response**:
 
 .. sourcecode:: http
 
     HTTP/1.1 200 OK
-    Connection: keep-alive
     Content-Type: application/json; charset=UTF-8
     X-Partner: 56810047f06c5a6ac62f4e1d
 

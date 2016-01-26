@@ -12,18 +12,16 @@ fields-schema
 .. sourcecode:: http
 
    GET /v1/resources/orders/56a69feaf06c5a21c3938057 HTTP/1.1
+   Host: api.ticketscloud.org
    Accept: application/json
    Authorization:  key 047bdb8bcee44d3693371920aaf9135c
-   Connection: keep-alive
    Content-Type: application/json
-   Host: ticketscloud.org
 
 **Response**:
 
 .. sourcecode:: http
 
     HTTP/1.1 200 OK
-    Connection: keep-alive
     Content-Type: application/json; charset=UTF-8
     X-Partner: 56810047f06c5a6ac62f4e1d
 
@@ -82,18 +80,16 @@ fields-schema
 .. sourcecode:: http
 
    GET /v1/resources/orders/56a69feaf06c5a21c3938057?fields-schema=id,tickets%7Bid,serial,number,seat%7Brow,number%7D%7D,event%7Btitle%7Btext%7D%7D HTTP/1.1
+   Host: ticketscloud.org
    Accept: application/json
    Authorization:  key 047bdb8bcee44d3693371920aaf9135c
-   Connection: keep-alive
    Content-Type: application/json
-   Host: ticketscloud.org
 
 **Response**:
 
 .. sourcecode:: http
 
     HTTP/1.1 200 OK
-    Connection: keep-alive
     Content-Type: application/json; charset=UTF-8
     X-Partner: 56810047f06c5a6ac62f4e1d
 

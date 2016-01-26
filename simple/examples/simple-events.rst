@@ -8,24 +8,16 @@
 .. sourcecode:: http
 
     GET /v1/services/simple/events HTTP/1.1
+    Host: api.ticketscloud.org
     Accept: */*
-    Accept-Encoding: gzip, deflate
     Authorization:  key 047bdb8bcee44d3693371920aaf9135c
-    Connection: keep-alive
-    Host: dev.ticketscloud.org
 
 **Response**:
 
 .. sourcecode:: http
 
     HTTP/1.1 200 OK
-    Cache-Control: private, max-age=0, no-cache, no-store
-    Connection: keep-alive
-    Content-Encoding: gzip
     Content-Type: application/json; charset=UTF-8
-    Date: Mon, 25 Jan 2016 21:15:31 GMT
-    Server: nginx/1.8.0
-    Transfer-Encoding: chunked
     X-Partner: 56810047f06c5a6ac62f4e1d
 
     [
