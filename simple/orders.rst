@@ -220,8 +220,7 @@ expired
 Отмена заказа, это :ref:`установка статуса <simple/orders/change_status>` :ref:`canceled`.
 Очень важно отменять заказ, как только это возможно, чтобы билеты вернулись в продаже.
 
-.. EXAMPLE
-.. Создать и отменить заказ.
+* :ref:`Пример запросов <ex/orders/cancel>`.
 
 .. _simple/orders/partial:
 
