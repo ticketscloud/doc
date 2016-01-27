@@ -27,42 +27,42 @@ fields-schema
 
     {
         "id": "56a69feaf06c5a21c3938057",
-        "created_at": "2016-01-25T22:21:30.737000+00:00", 
+        "created_at": "2016-01-25T22:21:30.737000+00:00",
         "customer": {
-            "email": "volkov@alex.com", 
-            "first_name": "Алексей", 
-            "lang": null, 
-            "last_name": "Волков", 
-            "mobile": "89167683232", 
+            "email": "volkov@alex.com",
+            "first_name": "Алексей",
+            "lang": null,
+            "last_name": "Волков",
+            "mobile": "89167683232",
             "user": "56a6a01841226dbf3b346180"
-        }, 
-        "deal": null, 
-        "event": "568a22b5f06c5a42975fb913", 
-        "number": 497291895, 
-        "org": "56810047f06c5a6ac62f4e1d", 
+        },
+        "deal": null,
+        "event": "568a22b5f06c5a42975fb913",
+        "number": 497291895,
+        "org": "56810047f06c5a6ac62f4e1d",
         "payment": {
-            "failure_url": "http://ticketscloud.org/", 
-            "redirect_url": "https://www.platron.ru/ps/test/start_payment.php?payment_id=23324826", 
-            "success_url": "http://ticketscloud.org/?tcordersuccess=497291895", 
+            "failure_url": "http://ticketscloud.org/",
+            "redirect_url": "https://www.platron.ru/ps/test/start_payment.php?payment_id=23324826",
+            "success_url": "http://ticketscloud.org/?tcordersuccess=497291895",
             "system": "545b544a5d645a463e779d53"
-        }, 
-        "promocodes": [], 
-        "reserved_till": "2016-01-25T22:52:21.062000+00:00", 
+        },
+        "promocodes": [],
+        "reserved_till": "2016-01-25T22:52:21.062000+00:00",
         "rules": {
             "568a22b6f06c5a42985fb914": "56a61828f06c5a059b937fdc"
-        }, 
-        "status": "in_progress", 
+        },
+        "status": "in_progress",
         "tickets": [
             "568a22b6f06c5a42e8847c55"
-        ], 
-        "updated_at": "2016-01-25T22:22:21.063000+00:00", 
-        "value": "100.00", 
-        "value_extra": "0.00", 
+        ],
+        "updated_at": "2016-01-25T22:22:21.063000+00:00",
+        "value": "100.00",
+        "value_extra": "0.00",
         "values": {
-            "extra": "0.00", 
-            "full": "100.00", 
+            "extra": "0.00",
+            "full": "100.00",
             "nominal": "100.00"
-        }, 
+        },
         "vendor": "56810047f06c5a6ac62f4e1d"
     }
 
@@ -93,12 +93,12 @@ fields-schema
             "title": {
                 "text": "test"
             }
-        },  
+        },
         "tickets": [
             {
-                "id": "568a22b6f06c5a42e8847c55", 
-                "number": 118398, 
-                "seat": {}, 
+                "id": "568a22b6f06c5a42e8847c55",
+                "number": 118398,
+                "seat": {},
                 "serial": "AEY"
             }
         ]
