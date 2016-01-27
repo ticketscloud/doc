@@ -25,6 +25,7 @@ Platron
 Алгоритм использования платрона такой:
 
     * :ref:`создать заказ <simple/orders/create>` и :ref:`добавить билеты <simple/orders/reserve>`;
+    * :ref:`Установить имя, фамилию и email в поле customer  ь<simple/orders/customer>`
     * :ref:`установить платёжную систему <simple/orders/ps>` из :ref:`списка ниже <simple/ps/platron/list>`;
     * установить поля ``payment.success_url`` и ``payment.failure_url``;
     * :ref:`перевести заказ <simple/orders/change_status>` в :ref:`in_progress`;
