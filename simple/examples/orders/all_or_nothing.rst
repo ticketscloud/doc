@@ -53,12 +53,6 @@
         "rules": {
             "56a6254bf06c5a059b93800c": "56a6254bf06c5a059b93800b"
         },
-        "salespoint": {
-            "blanks": {
-                "rejected": {},
-                "used": {}
-            }
-        },
         "status": "executed",
         "tickets": [
             "56a6253df06c5a059a9380ae",
@@ -124,12 +118,6 @@
         "reserved_till": "2016-01-26T13:41:22.844000+00:00",
         "rules": {
             "56a6254bf06c5a059b93800c": "56a6254bf06c5a059b93800b"
-        },
-        "salespoint": {
-            "blanks": {
-                "rejected": {},
-                "used": {}
-            }
         },
         "status": "executed",
         "tickets": [],

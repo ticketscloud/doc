@@ -50,12 +50,6 @@
         "rules": {
             "56a6254bf06c5a059b93800c": "56a6254bf06c5a059b93800b"
         },
-        "salespoint": {
-            "blanks": {
-                "rejected": {},
-                "used": {}
-            }
-        },
         "status": "executed",
         "tickets": [
             "56a6253df06c5a059a9380a0"
@@ -118,12 +112,6 @@
         "rules": {
             "56a6254bf06c5a059b93800c": "56a6254bf06c5a059b93800b"
         },
-        "salespoint": {
-            "blanks": {
-                "rejected": {},
-                "used": {}
-            }
-        },
         "status": "executed",
         "tickets": [
             "56a6253df06c5a059a9380a0"
@@ -184,12 +172,6 @@
         "reserved_till": "2016-01-26T09:56:06.619000+00:00",
         "rules": {
             "56a6254bf06c5a059b93800c": "56a6254bf06c5a059b93800b"
-        },
-        "salespoint": {
-            "blanks": {
-                "rejected": {},
-                "used": {}
-            }
         },
         "status": "in_progress",
         "tickets": [

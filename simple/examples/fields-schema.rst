@@ -51,12 +51,6 @@ fields-schema
         "rules": {
             "568a22b6f06c5a42985fb914": "56a61828f06c5a059b937fdc"
         }, 
-        "salespoint": {
-            "blanks": {
-                "rejected": {}, 
-                "used": {}
-            }
-        }, 
         "status": "in_progress", 
         "tickets": [
             "568a22b6f06c5a42e8847c55"
