@@ -47,5 +47,11 @@ Platron
 :platron/CASH: наличные ("евросеть", "связной"...);
 :platron/YANDEXMONEY: яндекс деньги;
 :platron/ALFACLICK: альфа-клик;
-:platron/TEST: тестовая, доступна только на https://stage.ticketscloud.org
-    для проверки полного цикла оплаты;
+
+Тестовые платежные системы
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Тестовые платежные системы доступны только на https://stage.ticketscloud.org .
+
+:platron/TEST: для проверки полного цикла оплаты;
+:platron/TEST_WITHOUT_PLATRON: для проверки цикла оплаты исключая платрон
