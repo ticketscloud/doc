@@ -7,6 +7,7 @@
 
     fields-schema
     simple-events
+    invitation
     orders/general
     orders/platron
     orders/carry_out
