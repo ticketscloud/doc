@@ -8,6 +8,7 @@
     fields-schema
     simple-events
     invitation
+    refund
     orders/general
     orders/platron
     orders/carry_out
