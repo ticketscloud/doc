@@ -9,6 +9,7 @@
     simple-events
     invitation
     refund
+    tickets_info
     orders/general
     orders/platron
     orders/carry_out
