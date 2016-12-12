@@ -10,6 +10,7 @@
     invitation
     refund
     tickets_info
+    user_legals
     orders/general
     orders/platron
     orders/carry_out
