@@ -24,7 +24,7 @@
     {
         "culprit": "user",
         "order": "5703d7542d709509727f929c",
-        "tickets": [
+        "tickets_refund": [
             "56ba2b6f9cb53851972a28db",
             "56ba2b6f9cb53851972a2883"
         ]
