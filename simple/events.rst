@@ -72,6 +72,7 @@
     :price_org: номинальная цена билета
     :price_extra: сервисный сбор
     :price: общая цена билета
+    :with_seats: наличие посадочных мест в категории
     :seats: :ref:`места <simple/events/seats>`
     :sector: сектор
 
