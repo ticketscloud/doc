@@ -80,7 +80,7 @@
 
     {
         "payment": {
-            "system": "platron/TEST"
+            "system": "api/BASE"
         }
     }
 
@@ -164,7 +164,7 @@
         "org": "56810047f06c5a6ac62f4e1d",
         "payment": {
             "failure_url": null,
-            "redirect_url": "https://www.platron.ru/payment_params.php?customer=b6cbe4bd8a338159bdf0f4b059652f7023330898",
+            "redirect_url": "https://www.goodservice.ru/payment_params.php?customer=b6cbe4bd8a338159bdf0f4b059652f7023330898",
             "success_url": null,
             "system": "545b544a5d645a463e779d53"
         },

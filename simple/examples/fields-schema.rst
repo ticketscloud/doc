@@ -42,7 +42,7 @@ fields-schema
         "org": "56810047f06c5a6ac62f4e1d",
         "payment": {
             "failure_url": "http://ticketscloud.org/",
-            "redirect_url": "https://www.platron.ru/ps/test/start_payment.php?payment_id=23324826",
+            "redirect_url": "https://www.goodservice.ru/ps/test/start_payment.php?payment_id=23324826",
             "success_url": "http://ticketscloud.org/?tcordersuccess=497291895",
             "system": "545b544a5d645a463e779d53"
         },

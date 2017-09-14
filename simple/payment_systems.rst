@@ -14,48 +14,6 @@ api/BASE
 
 * :ref:`Пример работы с заказом без платрона <ex/orders/manual>`
 
-.. _simple/ps/platron:
-
-Platron
-=======
-
-Если вы хотите, чтобы покупатели оплачивал заказ через платрон, нужно выбрать
-платёжную систему из :ref:`списка ниже <simple/ps/platron/list>`.
-
-Алгоритм использования платрона такой:
-
-    * :ref:`создать заказ <simple/orders/create>` и :ref:`добавить билеты <simple/orders/reserve>`;
-    * :ref:`Установить имя, фамилию и email в поле customer  ь<simple/orders/customer>`
-    * :ref:`установить платёжную систему <simple/orders/ps>` из :ref:`списка ниже <simple/ps/platron/list>`;
-    * установить поля ``payment.success_url`` и ``payment.failure_url``;
-    * :ref:`перевести заказ <simple/orders/change_status>` в :ref:`in_progress`;
-    * перенаправить пользователя на ``payment.redirect_url``;
-
-После чего покупатель оплачивает заказ на сайте платрона и перенаправляется
-на ``success_url`` или ``failure_url``, а заказ переходит в
-:ref:`done` (в случае успеха), :ref:`canceled` (в случае отмены) или :ref:`expired` (в случае неоплаты).
-
-* :ref:`Пример работы с платроном <ex/orders/platron>`.
-
-.. _simple/ps/platron/list:
-
-Список платёжных систем платрона
---------------------------------
-
-:platron/OTHER: универсальная, способ оплаты покупатель выбирает на сайте платрона;
-:platron/RUSSIANSTANDARD: банковские карты;
-:platron/CASH: наличные ("евросеть", "связной"...);
-:platron/YANDEXMONEY: яндекс деньги;
-:platron/ALFACLICK: альфа-клик;
-
-Тестовые платежные системы
-~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Тестовые платежные системы доступны только на https://stage.ticketscloud.org .
-
-:platron/TEST: для проверки полного цикла оплаты;
-:platron/TEST_WITHOUT_PLATRON: для проверки цикла оплаты исключая платрон
-
 
 .. _simple/ps/invoices:
 
