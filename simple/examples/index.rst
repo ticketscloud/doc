@@ -7,7 +7,6 @@
 
     fields-schema
     simple-events
-    invitation
     refund
     tickets_info
     user_legals
