@@ -659,11 +659,11 @@
 
         :jsonparam order: идентификатор заказа
         :jsonparam user_data: массив объектов с данными посетителей
-            :jsonparam ticket_id: (optional) id билета
-            :jsonparam user_id: id посетителя
-            :jsonparam name: имя посетителя
-            :jsonparam surname: фамилия посетителя
-            :jsonparam middle_name: (optional) отчество посетителя
+        :jsonparam user_data.ticket_id: (optional) id билета
+        :jsonparam user_data.user_id: id посетителя
+        :jsonparam user_data.name: имя посетителя
+        :jsonparam user_data.surname: фамилия посетителя
+        :jsonparam user_data.middle_name: (optional) отчество посетителя
 
 **Ответ**
 
