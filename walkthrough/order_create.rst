@@ -434,7 +434,7 @@
 которые должны быть в заказе (в т.ч. те, что уже зарезервированы).
 Для удаления конкретного билета из заказа, нужно передать все билеты, кроме удаляемого.
 
-.. warning:: 
+.. warning::
 
    Нельзя использовать в одном запросе с :ref:`random <walkthrough/order_create/random>`.
 
@@ -602,9 +602,9 @@
 .. note::
 
    Хотя ``tickets`` и ``random`` нельзя использовать в одном запросе, передать все билеты можно.
-   
+
    Алгоритм такой:
-   
+
    - Запрос с ``random``.
 
    - Получить из ответа id билетов в поле ``tickets``.
@@ -634,3 +634,67 @@
 .. note::
 
    Можно использовать, как с ``tickets``, так и с ``random``
+
+
+.. _walkthrough/order_create/ais_mosbilet:
+
+Передача данных посетителей на площадках АИС Мосбилет
+=====================================================
+
+Если площадка подключена к проекту АИС Мосбилет, то на всех мероприятиях на ней осуществляется продажа только именных билетов.
+
+.. note::
+
+    Отправка возможна только пока заказ находится в статусе ``executed``.
+
+
+.. _walkthrough/order_create/ais_mosbilet_by_agent:
+
+Передача распространителем
+--------------------------
+
+**Запрос**
+
+    .. http:put:: /v2/services/orders/mosbilet/user_data
+
+        :jsonparam order: идентификатор заказа
+        :jsonparam user_data: массив объектов с данными посетителей
+            :jsonparam ticket_id: (optional) id билета
+            :jsonparam user_id: id посетителя
+            :jsonparam name: имя посетителя
+            :jsonparam surname: фамилия посетителя
+            :jsonparam middle_name: (optional) отчество посетителя
+
+**Ответ**
+
+    В случае успеха будет HTTP ответ с кодом 202
+
+
+
+**Пример запроса**
+
+    .. sourcecode:: http
+
+        PUT /v2/services/orders/mosbilet/user_data HTTP/1.1
+        Authorization: key 9bd8359943b545500278875r49c5b96d
+        Content-Type: application/json
+
+        {
+            "order": "6911f0f346066e24b2175982",
+            "user_data": [
+                {
+                    "ticket_id": "6911f10246066e24b2175983",
+                    "user_id": "6911f28e46066e24b2175984",
+                    "name": "Иванов",
+                    "surname": "Иван",
+                    "middle_name": "Иванович"
+                }
+            ]
+        }
+
+**Пример ответа**
+
+    .. sourcecode:: http
+
+        HTTP/1.1 202 OK
+        Content-Type: text/html
