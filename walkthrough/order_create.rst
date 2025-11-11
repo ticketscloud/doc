@@ -657,18 +657,17 @@
 
     .. http:put:: /v2/services/orders/mosbilet/user_data
 
-        :jsonparam order: идентификатор заказа
-        :jsonparam user_data: массив объектов с данными посетителей
-            :jsonparam ticket_id: (optional) id билета
-            :jsonparam user_id: id посетителя
-            :jsonparam name: имя посетителя
-            :jsonparam surname: фамилия посетителя
-            :jsonparam middle_name: (optional) отчество посетителя
+        :jsonparam string order: идентификатор заказа
+        :jsonparam array user_data: массив объектов с данными посетителей
+        :jsonparam string user_data.ticket_id: (optional) id билета
+        :jsonparam string user_data.user_id: id посетителя
+        :jsonparam string user_data.name: имя посетителя
+        :jsonparam string user_data.surname: фамилия посетителя
+        :jsonparam string user_data.middle_name: (optional) отчество посетителя
 
 **Ответ**
 
     В случае успеха будет HTTP ответ с кодом 202
-
 
 
 **Пример запроса**
