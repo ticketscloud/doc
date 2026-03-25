@@ -9,3 +9,5 @@ recommonmark==0.5.0
 sphinx-rtd-theme<0.5
 readthedocs-sphinx-ext<2.2
 jinja2<3.1.0
+
+setuptools==81.0.0
