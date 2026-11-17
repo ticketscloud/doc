@@ -1,0 +1,135 @@
+---
+kind: pipeline
+type: kubernetes
+name: release
+
+trigger:
+  event:
+  - push
+  branch:
+    include:
+    - master
+
+clone:
+  disable: true
+  
+steps:
+- name: ©️ - clone
+  image: cr.yandex/crp1ijd2b1iedqvsiro7/git:alpine
+  commands:
+  - git clone "$DRONE_GIT_HTTP_URL" .
+  - git checkout $DRONE_COMMIT
+  
+- name: 🏷 - version
+  image: cr.yandex/crp1ijd2b1iedqvsiro7/versions:zzzsochi
+  commands:
+  - mkdir -p build
+  - versions build/version
+  - echo ${DRONE_COMMIT_SHA} > build/commit
+  - echo -n $(cat build/version) | tee .tags
+  depends_on:
+  - ©️ - clone
+
+- name: 🖼 - setup-image
+  image: zzzsochi/kubedrone:qvv01t
+  commands:
+  - deploy/drone/setup-image.sh
+  depends_on:
+  - 🏷 - version
+
+- name: 🏗 - publish
+  image: plugins/docker 
+  settings:
+    dockerfile: deploy/Dockerfile
+    repo: cr.yandex/crp1ijd2b1iedqvsiro7/api-docs
+    registry: cr.yandex/crp1ijd2b1iedqvsiro7
+    username: json_key
+    password: { from_secret: registry_key }
+  depends_on:
+  - 🏷 - version
+
+- name: deploy
+  image: zzzsochi/kubedrone:qvv01t
+  environment:
+    HTTPS_PROXY: http://vpn-proxy.drone.svc.cluster.local:3128
+  settings:
+    apply_kustomize: deploy/k8s
+    server: { from_secret: prod_k8s_endpoint }
+    server_ca: { from_secret: prod_k8s_ca }
+    client_crt: {from_secret: prod_k8s_client_crt}
+    client_key: {from_secret: prod_k8s_client_key}
+  depends_on:
+  - 🏗 - publish
+  - 🖼 - setup-image
+
+# registry secrets
+---
+kind: secret
+name: registry_key
+get:
+  path: yandex-container-registry
+  name: key
+
+# YC storage secrets
+---
+kind: secret
+name: yc_storage_access_key
+get:
+  path: yc-storage
+  name: AWS_ACCESS_KEY
+---
+kind: secret
+name: yc_storage_secret_key
+get:
+  path: yc-storage
+  name: AWS_SECRET_KEY
+---
+kind: secret
+name: yc_storage_bucket
+get:
+  path: yc-storage
+  name: AWS_BUCKET
+---
+kind: secret
+name: yc_storage_region
+get:
+  path: yc-storage
+  name: AWS_REGION
+
+# prod secrets
+---
+kind: secret
+name: prod_k8s_endpoint
+get:
+  path: prod-k8s
+  name: endpoint
+---
+kind: secret
+name: prod_k8s_ca
+get:
+  path: prod-k8s
+  name: ca
+---
+kind: secret
+name: prod_k8s_token
+get:
+  path: prod-k8s
+  name: token
+---
+kind: secret
+name: github_token
+get:
+  path: github
+  name: token
+---
+kind: secret
+name: prod_k8s_client_crt
+get:
+  path: prod-k8s
+  name: client_crt
+---
+kind: secret
+name: prod_k8s_client_key
+get:
+  path: prod-k8s
+  name: client_key

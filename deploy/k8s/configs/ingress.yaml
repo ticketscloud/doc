@@ -1,0 +1,16 @@
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: api-docs
+spec:
+  entryPoints:
+    - https
+  routes:
+    - kind: Rule
+      match: Host(`docs.ticketscloud.com`)
+      services:
+        - name: api-docs
+          port: 80
+  tls:
+    store:
+      name: default
