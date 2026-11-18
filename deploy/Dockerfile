@@ -1,5 +1,5 @@
 
-FROM python:3.9-slim AS build
+FROM mirror.gcr.io/library/python:3.9-slim AS build
 
 WORKDIR /srv/src
 
